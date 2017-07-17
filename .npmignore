@@ -1,0 +1,8 @@
+/.npmignore
+/.nyc_output
+/.nycrc
+/*.tgz
+/grunt
+/Gruntfile.js
+/lib/**/*.test.js
+/reports
