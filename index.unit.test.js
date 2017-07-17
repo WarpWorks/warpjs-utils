@@ -11,7 +11,8 @@ describe("index", () => {
 
         const clone = _.clone(moduleToTest);
         testHelpers.verifyProperties(clone, 'function', [
-            'byPositionThenName'
+            'byPositionThenName',
+            'WarpJSError'
         ]);
 
         testHelpers.verifyProperties(clone, 'object', [

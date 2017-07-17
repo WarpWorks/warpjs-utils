@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.2 - 2017-07-17
+
+- Adding WarpJSError.
+
 ## 0.1.1 - 2017-07-17
 
 - Fixed main entry.
