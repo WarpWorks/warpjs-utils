@@ -1,11 +1,11 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
     "coverage": "nyc npm run -s test",
-    "test": "mocha \"lib/**/*.unit.test.js\""
+    "test": "mocha \"lib/**/*.unit.test.js\" index.unit.test.js"
   },
   "repository": {
     "type": "git",

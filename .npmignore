@@ -4,5 +4,5 @@
 /*.tgz
 /grunt
 /Gruntfile.js
-/lib/**/*.test.js
+/**/*.test.js
 /reports
