@@ -12,7 +12,12 @@ describe("index", () => {
         const clone = _.clone(moduleToTest);
         testHelpers.verifyProperties(clone, 'function', [
             'byPositionThenName',
-            'WarpJSError'
+            'createResource',
+            'sendError',
+            'sendHal',
+            'sendIndex',
+            'WarpJSError',
+            'wrapWith406'
         ]);
 
         testHelpers.verifyProperties(clone, 'object', [

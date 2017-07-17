@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -35,9 +35,12 @@
     "grunt-eslint": "20.0.0",
     "jit-grunt": "0.10.0",
     "load-grunt-config": "0.19.2",
-    "lodash": "4.17.4",
     "mocha": "3.4.2",
     "nyc": "11.0.3",
     "time-grunt": "1.4.0"
+  },
+  "dependencies": {
+    "hal": "0.1.0",
+    "lodash": "4.17.4"
   }
 }

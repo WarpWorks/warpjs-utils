@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.3 - 2017-07-17
+
+- Adding createResource, sendError, sendHal, sendIndex, wrapWith406.
+
 ## 0.1.2 - 2017-07-17
 
 - Adding WarpJSError.
