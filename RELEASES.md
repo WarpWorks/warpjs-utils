@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.5 - 2017-07-19
+
+- Managing sendIndex bundle's path.
+
 ## 0.1.4 - 2017-07-19
 
 - Adding param for CSS file.
