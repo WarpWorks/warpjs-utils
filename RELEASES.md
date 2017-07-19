@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.6 - 2017-07-19
+
+- Adding getCurrentPageHal().
+
 ## 0.1.5 - 2017-07-19
 
 - Managing sendIndex bundle's path.
