@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,11 @@
   "keywords": [
     "WarpJS"
   ],
-  "author": "huu da",
+  "author": {
+    "name": "Hữu Ðà Trần",
+    "email": "huuda.tran@quoininc.com",
+    "url": "https://www.quoininc.com/staff/huu-da-tran/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/WarpWorks/warpjs-utils/issues"

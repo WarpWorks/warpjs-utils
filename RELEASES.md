@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.4 - 2017-07-19
+
+- Adding param for CSS file.
+
 ## 0.1.3 - 2017-07-17
 
 - Adding createResource, sendError, sendHal, sendIndex, wrapWith406.
