@@ -1,5 +1,11 @@
 # WarpJS-utils Releases
 
+## 0.1.7 - 2017-07-20
+
+- Allow passing more than one bundle in sendIndex();
+- Added urlFormat().
+- Fixed export name getCurrentPageHAL().
+
 ## 0.1.6 - 2017-07-19
 
 - Adding getCurrentPageHal().

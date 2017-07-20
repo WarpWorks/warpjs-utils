@@ -13,10 +13,11 @@ describe("index", () => {
         testHelpers.verifyProperties(clone, 'function', [
             'byPositionThenName',
             'createResource',
-            'getCurrentPageHal',
+            'getCurrentPageHAL',
             'sendError',
             'sendHal',
             'sendIndex',
+            'urlFormat',
             'WarpJSError',
             'wrapWith406'
         ]);
