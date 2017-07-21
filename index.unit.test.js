@@ -12,6 +12,7 @@ describe("index", () => {
         const clone = _.clone(moduleToTest);
         testHelpers.verifyProperties(clone, 'function', [
             'byPositionThenName',
+            'compareIDs',
             'createResource',
             'getCurrentPageHAL',
             'sendError',

@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.8 - 2017-07-21
+
+- Adding compareIDs().
+
 ## 0.1.7 - 2017-07-20
 
 - Allow passing more than one bundle in sendIndex();
