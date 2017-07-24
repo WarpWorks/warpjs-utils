@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 0.1.9 - 2017-07-24
+
+- Modified signature of sendHal().
+- Adding mapBrowser link.
+
 ## 0.1.8 - 2017-07-21
 
 - Adding compareIDs().
