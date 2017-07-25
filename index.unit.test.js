@@ -18,6 +18,7 @@ describe("index", () => {
             'sendError',
             'sendHal',
             'sendIndex',
+            'trace',
             'urlFormat',
             'WarpJSError',
             'wrapWith406'

@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.10 - 2017-07-25
+
+- Added '.trace()'.
+
 ## 0.1.9 - 2017-07-24
 
 - Modified signature of sendHal().

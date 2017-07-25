@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {

@@ -6,6 +6,7 @@ const getCurrentPageHAL = require('./lib/get-current-page-hal');
 const sendError = require('./lib/send-error');
 const sendHal = require('./lib/send-hal');
 const sendIndex = require('./lib/send-index');
+const trace = require('./lib/trace');
 const urlFormat = require('./lib/url-format');
 const WarpJSError = require('./lib/error');
 const wrapWith406 = require('./lib/wrap-with-406');
@@ -19,6 +20,7 @@ module.exports = {
     sendError,
     sendHal,
     sendIndex,
+    trace,
     urlFormat,
     WarpJSError,
     wrapWith406
