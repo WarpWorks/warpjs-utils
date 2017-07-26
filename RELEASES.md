@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.11 - 2017-07-26
+
+- Adjusting sendHal() and sendError() with RoutesInfo.
+
 ## 0.1.10 - 2017-07-25
 
 - Added '.trace()'.
