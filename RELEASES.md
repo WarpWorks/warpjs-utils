@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.12 - 2017-07-31
+
+- Fixed sendHal() to not break if homepage is not defined (useful for tests).
+
 ## 0.1.11 - 2017-07-26
 
 - Adjusting sendHal() and sendError() with RoutesInfo.
