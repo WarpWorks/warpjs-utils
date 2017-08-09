@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.13 - 2017-08-09
+
+- byPositionThenName() now handles both `Position` and `position` properties.
+
 ## 0.1.12 - 2017-07-31
 
 - Fixed sendHal() to not break if homepage is not defined (useful for tests).
