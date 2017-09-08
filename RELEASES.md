@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.1.14 - 2017-09-08
+
+- Adding session-related links in sendHal().
+
 ## 0.1.13 - 2017-08-09
 
 - byPositionThenName() now handles both `Position` and `position` properties.

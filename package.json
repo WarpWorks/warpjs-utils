@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,8 @@
   "devDependencies": {
     "@quoin/eslint-config-quoin": "0.2.0",
     "@quoin/node-test-helpers": "0.2.2",
-    "eslint": "4.3.0",
-    "eslint-plugin-html": "3.1.1",
+    "eslint": "4.6.1",
+    "eslint-plugin-html": "3.2.1",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-node": "5.1.1",
@@ -37,11 +37,11 @@
     "eslint-plugin-standard": "3.0.1",
     "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
-    "grunt-eslint": "20.0.0",
+    "grunt-eslint": "20.1.0",
     "jit-grunt": "0.10.0",
     "load-grunt-config": "0.19.2",
-    "mocha": "3.4.2",
-    "nyc": "11.0.3",
+    "mocha": "3.5.0",
+    "nyc": "11.2.1",
     "time-grunt": "1.4.0"
   },
   "dependencies": {
