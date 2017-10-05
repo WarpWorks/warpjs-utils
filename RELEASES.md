@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.2.0-rc1 - 2017-10-05
+
+- Added handlebars views, partials, and helpers.
+
 ## 0.1.14 - 2017-09-08
 
 - Adding session-related links in sendHal().

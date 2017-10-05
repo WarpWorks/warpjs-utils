@@ -15,6 +15,8 @@ describe("index", () => {
             'compareIDs',
             'createResource',
             'getCurrentPageHAL',
+            'getHandlebarsViewsDir',
+            'requirePartial',
             'sendError',
             'sendHal',
             'sendIndex',

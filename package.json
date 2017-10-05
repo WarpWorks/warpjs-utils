@@ -1,11 +1,11 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.1.14",
+  "version": "0.2.0-rc1",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
     "coverage": "nyc npm run -s test",
-    "test": "mocha \"lib/**/*.unit.test.js\" index.unit.test.js"
+    "test": "mocha \"lib/**/*.unit.test.js\" \"handlebars/**/*.unit.test.js\" index.unit.test.js"
   },
   "repository": {
     "type": "git",
@@ -26,27 +26,28 @@
   "homepage": "https://github.com/WarpWorks/warpjs-utils#readme",
   "peerDependencies": {},
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "0.2.0",
-    "@quoin/node-test-helpers": "0.2.2",
-    "eslint": "4.6.1",
-    "eslint-plugin-html": "3.2.1",
-    "eslint-plugin-import": "2.7.0",
-    "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-node": "5.1.1",
-    "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-standard": "3.0.1",
-    "grunt": "1.0.1",
-    "grunt-cli": "1.2.0",
-    "grunt-eslint": "20.1.0",
-    "jit-grunt": "0.10.0",
-    "load-grunt-config": "0.19.2",
-    "mocha": "3.5.0",
-    "nyc": "11.2.1",
-    "time-grunt": "1.4.0"
+    "@quoin/eslint-config-quoin": "0.2.x",
+    "@quoin/node-test-helpers": "0.2.x",
+    "eslint": "4.6.x",
+    "eslint-plugin-html": "3.2.x",
+    "eslint-plugin-import": "2.7.x",
+    "eslint-plugin-json": "1.2.x",
+    "eslint-plugin-node": "5.1.x",
+    "eslint-plugin-promise": "3.5.x",
+    "eslint-plugin-standard": "3.0.x",
+    "grunt": "1.0.x",
+    "grunt-cli": "1.2.x",
+    "grunt-eslint": "20.1.x",
+    "jit-grunt": "0.10.x",
+    "load-grunt-config": "0.19.x",
+    "mocha": "3.5.x",
+    "nyc": "11.2.x",
+    "time-grunt": "1.4.x"
   },
   "dependencies": {
     "bluebird": "3.5.0",
     "hal": "0.1.0",
+    "handlebars": "4.0.x",
     "lodash": "4.17.4"
   }
 }
