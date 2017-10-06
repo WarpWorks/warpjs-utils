@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.2.1 - 2017-10-06
+
+- Check `err` before using `err.message`.
+
 ## 0.2.0 - 2017-10-06
 
 - Added handlebars views, partials, and helpers.
