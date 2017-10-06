@@ -1,6 +1,6 @@
 # WarpJS-utils Releases
 
-## 0.2.0-rc1 - 2017-10-05
+## 0.2.0 - 2017-10-06
 
 - Added handlebars views, partials, and helpers.
 

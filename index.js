@@ -3,6 +3,8 @@ const compareIDs = require('./lib/compare-ids');
 const constants = require('./lib/constants');
 const createResource = require('./lib/create-resource');
 const getCurrentPageHAL = require('./lib/get-current-page-hal');
+const getHandlebarsHelpersDir = require('./lib/get-handlebars-helpers-dir');
+const getHandlebarsPartialsDir = require('./lib/get-handlebars-partials-dir');
 const getHandlebarsViewsDir = require('./lib/get-handlebars-views-dir');
 const requirePartial = require('./lib/require-partial');
 const sendError = require('./lib/send-error');
@@ -19,6 +21,8 @@ module.exports = {
     constants,
     createResource,
     getCurrentPageHAL,
+    getHandlebarsHelpersDir,
+    getHandlebarsPartialsDir,
     getHandlebarsViewsDir,
     requirePartial,
     sendError,
