@@ -1,6 +1,10 @@
 # WarpJS-utils Releases
 
-## 0.2.2 - 2017-10-14
+## 0.2.3 - 2017-10-11
+
+- Using hal@0.x instead of hal@1.x
+
+## 0.2.2 - 2017-10-11
 
 - More refactoring for handlebars.
 
