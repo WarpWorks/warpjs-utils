@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.2.2 - 2017-10-14
+
+- More refactoring for handlebars.
+
 ## 0.2.1 - 2017-10-06
 
 - Check `err` before using `err.message`.

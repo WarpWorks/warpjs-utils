@@ -30,6 +30,7 @@ module.exports = {
         },
         src: [
             '*.test.js',
+            'handlebars/**/*.test.js',
             'lib/**/*.test.js'
         ]
     }
