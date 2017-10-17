@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.2.5 - 2017-10-17
+
+- Adding momentJS helper `momentLongFormat` and `momentFromNow`.
+
 ## 0.2.4 - 2017-10-11
 
 - Using hal@0.x instead of hal@1.x
