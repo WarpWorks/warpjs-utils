@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 0.2.6 - 2017-11-15
+
+- Moved proxy and cache from warpjs to this package.
+
 ## 0.2.5 - 2017-10-17
 
 - Adding momentJS helper `momentLongFormat` and `momentFromNow`.
