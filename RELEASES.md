@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.1 - 2017-11-29
+
+- Fixed minor typo.
+
 ## 1.2.0 - 2017-11-29
 
 - Adding the search in the header.
