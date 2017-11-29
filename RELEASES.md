@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.0 - 2017-11-29
+
+- Adding the search in the header.
+
 ## 0.2.6 - 2017-11-15
 
 - Moved proxy and cache from warpjs to this package.

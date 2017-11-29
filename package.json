@@ -1,9 +1,10 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "0.2.6",
+  "version": "1.2.0",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
+    "prepublish": "grunt && npm test",
     "coverage": "nyc npm run -s test",
     "test": "mocha \"lib/**/*.unit.test.js\" \"handlebars/**/*.unit.test.js\" index.unit.test.js"
   },
@@ -45,6 +46,7 @@
     "time-grunt": "1.4.x"
   },
   "dependencies": {
+    "@warp-works/warpjs-plugins": "1.2.0",
     "bluebird": "3.5.1",
     "hal": "0.1.0",
     "handlebars": "4.0.x",

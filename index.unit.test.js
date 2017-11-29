@@ -14,6 +14,7 @@ describe("index", () => {
             'byPositionThenName',
             'compareIDs',
             'createResource',
+            'documentReady',
             'getCurrentPageHAL',
             'getHandlebarsHelpersDir',
             'getHandlebarsPartialsDir',

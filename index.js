@@ -3,6 +3,7 @@ const cache = require('./lib/cache');
 const compareIDs = require('./lib/compare-ids');
 const constants = require('./lib/constants');
 const createResource = require('./lib/create-resource');
+const documentReady = require('./lib/document-ready');
 const getCurrentPageHAL = require('./lib/get-current-page-hal');
 const getHandlebarsHelpersDir = require('./lib/get-handlebars-helpers-dir');
 const getHandlebarsPartialsDir = require('./lib/get-handlebars-partials-dir');
@@ -23,6 +24,7 @@ module.exports = {
     compareIDs,
     constants,
     createResource,
+    documentReady: ($) => documentReady($),
     getCurrentPageHAL,
     getHandlebarsHelpersDir,
     getHandlebarsPartialsDir,
