@@ -13,6 +13,7 @@ describe("index", () => {
         testHelpers.verifyProperties(clone, 'function', [
             'byPositionThenName',
             'compareIDs',
+            'convertCustomLink',
             'createResource',
             'documentReady',
             'getCurrentPageHAL',

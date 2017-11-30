@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,9 @@
     "url": "https://github.com/WarpWorks/warpjs-utils/issues"
   },
   "homepage": "https://github.com/WarpWorks/warpjs-utils#readme",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "express": ">=4.x.x"
+  },
   "devDependencies": {
     "@quoin/eslint-config-quoin": "latest",
     "@quoin/node-test-helpers": "latest",
@@ -36,6 +38,7 @@
     "eslint-plugin-node": "5.2.x",
     "eslint-plugin-promise": "3.6.x",
     "eslint-plugin-standard": "3.0.x",
+    "express": "4.16.2",
     "grunt": "1.0.x",
     "grunt-cli": "latest",
     "grunt-eslint": "20.1.x",
@@ -46,6 +49,7 @@
     "time-grunt": "1.4.x"
   },
   "dependencies": {
+    "@quoin/expressjs-routes-info": "0.1.10",
     "@warp-works/warpjs-plugins": "1.2.0",
     "bluebird": "3.5.1",
     "hal": "0.1.0",

@@ -2,6 +2,7 @@ const byPositionThenName = require('./lib/by-position-then-name');
 const cache = require('./lib/cache');
 const compareIDs = require('./lib/compare-ids');
 const constants = require('./lib/constants');
+const convertCustomLink = require('./lib/convert-custom-link');
 const createResource = require('./lib/create-resource');
 const documentReady = require('./lib/document-ready');
 const getCurrentPageHAL = require('./lib/get-current-page-hal');
@@ -23,6 +24,7 @@ module.exports = {
     cache,
     compareIDs,
     constants,
+    convertCustomLink: (text) => convertCustomLink(text),
     createResource,
     documentReady: ($) => documentReady($),
     getCurrentPageHAL,
