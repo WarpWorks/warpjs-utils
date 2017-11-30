@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.2 - 2017-11-30
+
+- Added missing clickable class to search elements.
+
 ## 1.2.1 - 2017-11-29
 
 - Fixed minor typo.
