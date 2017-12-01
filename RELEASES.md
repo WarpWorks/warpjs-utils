@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.5 - 2017-12-01
+
+- Adding custom class for seemless input group-addon.
+
 ## 1.2.2 - 2017-11-30
 
 - Added missing clickable class to search elements.
