@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.6 - 2017-12-05
+
+- Adding `toastr` library. Updated [README.md](README.md) for API. Updated
+  `jquery@3`.
+
 ## 1.2.5 - 2017-12-01
 
 - Adding custom class for seemless input group-addon.

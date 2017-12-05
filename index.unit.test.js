@@ -32,7 +32,8 @@ describe("index", () => {
         testHelpers.verifyProperties(clone, 'object', [
             'cache',
             'constants',
-            'proxy'
+            'proxy',
+            'toastr'
         ]);
 
         expect(clone).to.be.empty();
