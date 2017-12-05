@@ -1,5 +1,26 @@
 # WarpJS-utils Releases
 
+## 1.2.6 - 2017-12-05
+
+- Adding `toastr` library. Updated [README.md](README.md) for API. Updated
+  `jquery@3`.
+
+## 1.2.5 - 2017-12-01
+
+- Adding custom class for seemless input group-addon.
+
+## 1.2.2 - 2017-11-30
+
+- Added missing clickable class to search elements.
+
+## 1.2.1 - 2017-11-29
+
+- Fixed minor typo.
+
+## 1.2.0 - 2017-11-29
+
+- Adding the search in the header.
+
 ## 0.2.6 - 2017-11-15
 
 - Moved proxy and cache from warpjs to this package.
