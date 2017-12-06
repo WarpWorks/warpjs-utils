@@ -1,6 +1,6 @@
 # WarpJS-utils Releases
 
-## 1.2.6 - 2017-12-05
+## 1.2.6 - 2017-12-06
 
 - Adding `toastr` library. Updated [README.md](README.md) for API. Updated
   `jquery@3`.
