@@ -19,6 +19,7 @@ describe("index", () => {
             'getHandlebarsHelpersDir',
             'getHandlebarsPartialsDir',
             'getHandlebarsViewsDir',
+            'getInitialData',
             'requirePartial',
             'sendError',
             'sendHal',
@@ -33,7 +34,11 @@ describe("index", () => {
             'cache',
             'constants',
             'proxy',
-            'toastr'
+            'toast'
+        ]);
+
+        testHelpers.verifyProperties(clone, 'string', [
+            'assetsFolder'
         ]);
 
         expect(clone).to.be.empty();

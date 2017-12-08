@@ -29,6 +29,10 @@ In `webpack`, you can define these for the helpers:
 
 ## API
 
+### .assetsFolder
+
+Path to the folder containing the shared assets.
+
 ### .byPositionThenName(left, right)
 
 Sort function that will order objects by their position, then name.
@@ -84,12 +88,9 @@ defined.
 
 ### .sendIndex(res, title, bundles, cssFile)
 
+### .toast.success($, text, [heading])
 
-### .toastr
-
-A toastr object. See [toastr](https://github.com/CodeSeven/toastr) for more
-details of exposed object.
-
+Toaster.
 
 ### .trace(level, arg1, arg2, arg3, arg4)
 

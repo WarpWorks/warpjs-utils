@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.7 - 2017-12-08
+
+- Adding the shared 3rd party lib in here.
+- Used another `toast` library because of bugs in previous one.
+
 ## 1.2.6 - 2017-12-06
 
 - Adding `toastr` library. Updated [README.md](README.md) for API. Updated
