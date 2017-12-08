@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.8 - 2017-12-08
+
+- Bump down jquery to @2.
+
 ## 1.2.7 - 2017-12-08
 
 - Adding the shared 3rd party lib in here.
