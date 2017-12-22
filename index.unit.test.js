@@ -33,6 +33,7 @@ describe("index", () => {
         testHelpers.verifyProperties(clone, 'object', [
             'cache',
             'constants',
+            'docLevel',
             'proxy',
             'toast'
         ]);

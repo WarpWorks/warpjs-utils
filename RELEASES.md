@@ -1,5 +1,12 @@
 # WarpJS-utils Releases
 
+## 1.2.9 - 2017-12-22
+
+- Added `Content-Type` to `post()`.
+- Adding some 'doc-level` utilities.
+- Refactored `proxy` to have consistent headers.
+- Fixed route expansion to always replace params due to query params.
+
 ## 1.2.8 - 2017-12-08
 
 - Bump down jquery to @2.

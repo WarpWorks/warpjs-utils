@@ -4,6 +4,7 @@
   "check-coverage": false,
   "exclude": [
     "**/*.*.test.js",
+    "assets",
     "Gruntfile.js",
     "grunt",
     "reports"
