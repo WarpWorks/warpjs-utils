@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.10 - 2018-01-04
+
+- Fixed debug label
+- Put plugins as peerDependencies.
+
 ## 1.2.9 - 2017-12-22
 
 - Added `Content-Type` to `post()`.

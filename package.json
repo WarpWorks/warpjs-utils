@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -25,12 +25,15 @@
     "url": "https://github.com/WarpWorks/warpjs-utils/issues"
   },
   "homepage": "https://github.com/WarpWorks/warpjs-utils#readme",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@warp-works/warpjs-plugins": ">=1.2.3"
+  },
   "devDependencies": {
     "@quoin/eslint-config-quoin": "latest",
     "@quoin/node-test-helpers": "latest",
+    "@warp-works/warpjs-plugins": "1.2.3",
     "bootstrap": "3.3.7",
-    "eslint": "4.13.x",
+    "eslint": "4.14.x",
     "eslint-plugin-html": "4.0.x",
     "eslint-plugin-import": "2.8.x",
     "eslint-plugin-json": "1.2.x",
@@ -47,12 +50,11 @@
     "jquery": "2.2.4",
     "jquery-toast-plugin": "1.3.2",
     "load-grunt-config": "0.19.x",
-    "mocha": "4.0.x",
+    "mocha": "4.1.x",
     "nyc": "11.4.x",
     "time-grunt": "1.4.x"
   },
   "dependencies": {
-    "@warp-works/warpjs-plugins": "1.2.1",
     "bluebird": "3.5.1",
     "hal": "0.1.0",
     "handlebars": "4.0.x",
