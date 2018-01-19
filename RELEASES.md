@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.11 - 2018-01-19
+
+- Renamed some files/variables to mention edition instead of content.
+- Added different background color for Studio.
+
 ## 1.2.10 - 2018-01-04
 
 - Fixed debug label

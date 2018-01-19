@@ -21,8 +21,8 @@
     <!-- Custom styles for this template -->
     <link href="{{staticUrl}}/libs/bootstrap/theme.css" rel="stylesheet">
 
-    <!-- HeadStart specific styles -->
-    <link rel="stylesheet" href="{{staticUrl}}/app/warpjs-content.min.css" />
+    <!-- WarpJS specific styles -->
+    <link rel="stylesheet" href="{{staticUrl}}/app/warpjs-edition.min.css" />
 
 {{#if cssFile}}
     <link rel="stylesheet" href="{{cssFile}}" />
@@ -32,7 +32,7 @@
     <link rel="icon" href="{{staticUrl}}/images/favicon.ico" />
 </head>
 
-<body>
+<body {{#if isStudio}}class="warpjs-studio"{{/if}}>
     <div id="warpjs-content-placeholder"></div>
 
     <!-- Bootstrap core JavaScript -->
@@ -45,10 +45,9 @@
     <script src="{{staticUrl}}/3rd-party/js/tinymce.min.js"></script>
     <script src="{{staticUrl}}/libs/custom-links-modal.js"></script>
 
-{{#each bundles}}
-    <script src="{{this}}"></script>
+{{#each bundles as |jsBundle|}}
+    <script src="{{jsBundle}}"></script>
 {{/each}}
 
 </body>
 </html>
-
