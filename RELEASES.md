@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.12 - 2018-01-19
+
+- Fixed bundle names to match `.min.js`.
+
 ## 1.2.11 - 2018-01-19
 
 - Renamed some files/variables to mention edition instead of content.
