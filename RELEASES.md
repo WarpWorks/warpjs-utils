@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.14 - 2018-01-25
+
+- Handling Enum.
+
 ## 1.2.13 - 2018-01-25
 
 - Created DocLevel model to handle docLevel/updatePath manipulation.
