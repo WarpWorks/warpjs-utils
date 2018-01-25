@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.13 - 2018-01-25
+
+- Created DocLevel model to handle docLevel/updatePath manipulation.
+
 ## 1.2.12 - 2018-01-19
 
 - Fixed bundle names to match `.min.js`.
