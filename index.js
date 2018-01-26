@@ -5,8 +5,7 @@ const cache = require('./lib/cache');
 const compareIDs = require('./lib/compare-ids');
 const constants = require('./lib/constants');
 const createResource = require('./lib/create-resource');
-const DocLevel = require('./lib/doc-level');
-const docLevelUtils = require('./lib/doc-level-utils');
+const docLevel = require('./lib/doc-level');
 const documentReady = require('./lib/document-ready');
 const getCurrentPageHAL = require('./lib/get-current-page-hal');
 const getHandlebarsHelpersDir = require('./lib/get-handlebars-helpers-dir');
@@ -36,8 +35,9 @@ module.exports = {
     compareIDs: (id1, id2) => compareIDs(id1, id2),
     constants,
     createResource: (reqOrPath, data) => createResource(reqOrPath, data),
-    DocLevel,
-    docLevel: docLevelUtils,
+
+    /** @deprecated */
+    docLevel,
     documentReady: ($) => documentReady($),
     getCurrentPageHAL: ($, url) => getCurrentPageHAL($, url),
     getHandlebarsHelpersDir: () => getHandlebarsHelpersDir(),

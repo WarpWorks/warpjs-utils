@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.15 - 2018-01-25
+
+- Revert changes for DocLevel model.
+
 ## 1.2.14 - 2018-01-25
 
 - Handling Enum.
