@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -33,11 +33,11 @@
     "@quoin/node-test-helpers": "latest",
     "@warp-works/warpjs-plugins": "1.2.3",
     "bootstrap": "3.3.x",
-    "eslint": "4.16.x",
+    "eslint": "4.17.x",
     "eslint-plugin-html": "4.0.x",
     "eslint-plugin-import": "2.8.x",
     "eslint-plugin-json": "1.2.x",
-    "eslint-plugin-node": "5.2.x",
+    "eslint-plugin-node": "6.0.x",
     "eslint-plugin-promise": "3.6.x",
     "eslint-plugin-standard": "3.0.x",
     "font-awesome": "4.7.0",
@@ -55,10 +55,10 @@
     "time-grunt": "1.4.x"
   },
   "dependencies": {
-    "bluebird": "3.5.1",
-    "hal": "0.1.0",
+    "bluebird": "3.5.x",
+    "hal": "0.1.x",
     "handlebars": "4.0.x",
-    "lodash": "4.17.4",
+    "lodash": "4.17.x",
     "moment": "2.20.x"
   }
 }
