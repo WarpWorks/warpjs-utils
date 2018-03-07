@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.16 - 2018-03-07
+
+- Adding heading for loading toast.
+
 ## 1.2.15 - 2018-01-25
 
 - Revert changes for DocLevel model.
