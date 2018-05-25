@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.17 - 2018-05-25
+
+- Explicit definition of `Promise`.
+- Removed dependency on `chai-as-promised`.
+
 ## 1.2.16 - 2018-03-07
 
 - Adding heading for loading toast.
