@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.18 - 2018-06-19
+
+- Missing `debug` dependency.
+
 ## 1.2.17 - 2018-05-25
 
 - Explicit definition of `Promise`.
