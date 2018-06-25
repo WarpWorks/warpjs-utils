@@ -22,6 +22,15 @@ const trace = require('./lib/trace');
 const urlFormat = require('./lib/url-format');
 const WarpJSError = require('./lib/error');
 const wrapWith406 = require('./lib/wrap-with-406');
+const canEdit = require('./lib/server/can-edit');
+const documentDoesNotExist = require('./lib/server/document-does-not-exist');
+const getConfig = require('./lib/server/get-config');
+const getDomain = require('./lib/server/get-domain');
+const getEntity = require('./lib/server/get-entity');
+const getPersistence = require('./lib/server/get-persistence');
+const getRootEntity = require('./lib/server/get-root-entity');
+
+
 
 const PROJECT_ROOT = path.dirname(require.resolve('./package.json'));
 
@@ -35,7 +44,13 @@ module.exports = {
     compareIDs: (id1, id2) => compareIDs(id1, id2),
     constants,
     createResource: (reqOrPath, data) => createResource(reqOrPath, data),
-
+    canEdit: (persistance, entity, instance, user) => canEdit(persistance, entity, instance, user),
+    documentDoesNotExist: (req, res) => documentDoesNotExist(req, res),
+    getConfig: () => getConfig(),
+    getDomain: (domainName) => getDomain(domainName),
+    getEntity: (domainName, type) => getEntity(domainName, type),
+    getPersistence: (domainName) => getPersistence(domainName),
+    getRootEntity: (domainName) => getRootEntity(domainName),
     /** @deprecated */
     docLevel,
     documentReady: ($) => documentReady($),
