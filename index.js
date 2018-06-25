@@ -22,6 +22,14 @@ const trace = require('./lib/trace');
 const urlFormat = require('./lib/url-format');
 const WarpJSError = require('./lib/error');
 const wrapWith406 = require('./lib/wrap-with-406');
+const canEdit = require('./lib/can-edit');
+const documentDoesNotExist = require('./lib/document-does-not-exist');
+const getConfig = require('./lib/get-config');
+const getDomain = require('./lib/get-domain');
+const getEntity = require('./lib/get-entity');
+const getPersistence = require('./lib/get-persistence');
+const getRootEntity = require('./lib/get-root-entity');
+
 
 const PROJECT_ROOT = path.dirname(require.resolve('./package.json'));
 
@@ -29,14 +37,20 @@ module.exports = {
     get assetsFolder() {
         return path.join(PROJECT_ROOT, 'assets');
     },
+	canEdit: (persistance, entity, instance, user) => canEdit(persistance, entity, instance, user),
+    documentDoesNotExist: (req, res) => documentDoesNotExist(req, res),
+    getConfig: () => getConfig(),
+    getDomain: (domainName) => getDomain(domainName),
+    getEntity: (domainName, type) => getEntity(domainName, type),
+    getPersistence: (domainName) => getPersistence(domainName),
+    getRootEntity: (domainName) => getRootEntity(domainName),
+    sendError: (req, res, err) => sendError(req, res, err),
 
     byPositionThenName: (left, right) => byPositionThenName(left, right),
     cache,
     compareIDs: (id1, id2) => compareIDs(id1, id2),
     constants,
     createResource: (reqOrPath, data) => createResource(reqOrPath, data),
-
-    /** @deprecated */
     docLevel,
     documentReady: ($) => documentReady($),
     getCurrentPageHAL: ($, url) => getCurrentPageHAL($, url),
