@@ -16,6 +16,13 @@
 {{/if}}
     </ul>
 
+    {{#if _embedded.headerMenuItems}}
+      <div class="navbar-right">
+        {{>menu menuItems=_embedded.headerMenuItems}}
+        &nbsp;&nbsp;&nbsp;
+      </div>
+    {{/if}}
+
     <p class="navbar-text navbar-right">
         {{> login}}
         &nbsp;&nbsp;&nbsp;

@@ -16,6 +16,12 @@
         &nbsp;&nbsp;&nbsp;
       </div>
     {{/if}}
+    {{#if _embedded.headerMenuItems}}
+      <div class="pull-right">
+        {{>menu menuItems=_embedded.headerMenuItems}}
+      </div>
+    {{/if}}
+
     <div class="pull-right">
       {{> login}}
       {{> search}}

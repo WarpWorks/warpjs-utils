@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.22 - 2018-06-27
+
+- Adding header menu.
+
 ## 1.2.18 - 2018-06-19
 
 - Missing `debug` dependency.
