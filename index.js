@@ -12,9 +12,11 @@ const getHandlebarsHelpersDir = require('./lib/get-handlebars-helpers-dir');
 const getHandlebarsPartialsDir = require('./lib/get-handlebars-partials-dir');
 const getHandlebarsViewsDir = require('./lib/get-handlebars-views-dir');
 const getInitialData = require('./lib/get-initial-data');
+const output = require('./lib/output');
 const proxy = require('./lib/proxy');
 const requirePartial = require('./lib/require-partial');
 const sendError = require('./lib/send-error');
+const sendErrorHal = require('./lib/send-error-hal');
 const sendHal = require('./lib/send-hal');
 const sendIndex = require('./lib/send-index');
 const toast = require('./lib/toast');
@@ -44,9 +46,11 @@ module.exports = {
     getHandlebarsPartialsDir: () => getHandlebarsPartialsDir(),
     getHandlebarsViewsDir: () => getHandlebarsViewsDir(),
     getInitialData: ($) => getInitialData($),
+    output,
     proxy,
     requirePartial: (partialName) => requirePartial(partialName),
     sendError: (req, res, RoutesInfo, err) => sendError(req, res, RoutesInfo, err),
+    sendErrorHal: (req, res, resource, err, RoutesInfo, status) => sendErrorHal(req, res, resource, err, RoutesInfo, status),
     sendHal: (req, res, resource, RoutesInfo, status) => sendHal(req, res, resource, RoutesInfo, status),
     sendIndex: (res, title, bundles, cssFile) => sendIndex(res, title, bundles, cssFile),
     toast,

@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.23 - 2018-07-21
+
+- Adding `sendErrorHal`.
+
 ## 1.2.22 - 2018-06-27
 
 - Adding header menu.
