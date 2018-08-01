@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.24 - 2018-08-01
+
+- Fixing sorting by trim() the name first.
+
 ## 1.2.23 - 2018-07-21
 
 - Adding `sendErrorHal`.
