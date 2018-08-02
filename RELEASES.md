@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.25 - 2018-08-01
+
+- Portal new header.
+
 ## 1.2.24 - 2018-08-01
 
 - Fixing sorting by trim() the name first.

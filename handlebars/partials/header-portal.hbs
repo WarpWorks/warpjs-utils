@@ -1,32 +1,13 @@
-<header class="header i3c-portal--header row">
-  <div class="col-xs-1 left-right-margin" />
+<div class="logo-container col-xs-5 no-padding">
+  <a href="{{_links.warpjsHomepage.href}}"><img class="logo"
+     src="/public/iic_images/IIC-logo-4.png"
+     alt="[LOGO]" /></a>
+</div>
 
-  <div class="logo-container col-xs-5 no-padding">
-    <a href="{{_links.warpjsHomepage.href}}"><img class="logo"
-       src="/public/iic_images/IIC-logo-4.png"
-       alt="[LOGO]" /></a>
-  </div>
-
-  <div class="map-browser-header col-xs-5">
-    {{#if _links.mapBrowser}}
-      <div class="pull-right">
-        <a href="{{_links.mapBrowser.href}}"><img align="right" title="{{_links.mapBrowserImage.title}}" src="{{_links.mapBrowserImage.href}}" /></a>
-      </div>
-      <div class="pull-right">
-        &nbsp;&nbsp;&nbsp;
-      </div>
-    {{/if}}
-    {{#if _embedded.headerMenuItems}}
-      <div class="pull-right">
-        {{>menu menuItems=_embedded.headerMenuItems}}
-      </div>
-    {{/if}}
-
+<div class="map-browser-header col-xs-5">
+  {{#if _embedded.headerMenuItems}}
     <div class="pull-right">
-      {{> login}}
-      {{> search}}
+      {{>menu menuItems=_embedded.headerMenuItems}}
     </div>
-  </div>
-
-  <div class="col-xs-1 left-right-margin" />
-</header>
+  {{/if}}
+</div>
