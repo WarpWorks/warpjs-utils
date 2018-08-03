@@ -19,6 +19,7 @@ const sendError = require('./lib/send-error');
 const sendErrorHal = require('./lib/send-error-hal');
 const sendHal = require('./lib/send-hal');
 const sendIndex = require('./lib/send-index');
+const sendPortalIndex = require('./lib/send-portal-index');
 const toast = require('./lib/toast');
 const trace = require('./lib/trace');
 const urlFormat = require('./lib/url-format');
@@ -53,6 +54,7 @@ module.exports = {
     sendErrorHal: (req, res, resource, err, RoutesInfo, status) => sendErrorHal(req, res, resource, err, RoutesInfo, status),
     sendHal: (req, res, resource, RoutesInfo, status) => sendHal(req, res, resource, RoutesInfo, status),
     sendIndex: (res, title, bundles, cssFile) => sendIndex(res, title, bundles, cssFile),
+    sendPortalIndex: (req, res, RoutesInfo, config, title, bundles, cssFile) => sendPortalIndex(req, res, RoutesInfo, config, title, bundles, cssFile),
     toast,
     trace: (level, arg1, arg2, arg3, arg4) => trace(level, arg1, arg2, arg3, arg4),
     urlFormat: (pathname, query) => urlFormat(pathname, query),

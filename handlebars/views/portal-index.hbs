@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>WarpJS - {{title}}</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="{{staticUrl}}/3rd-party/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{staticUrl}}/3rd-party/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="{{staticUrl}}/3rd-party/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{staticUrl}}/3rd-party/css/jquery.toast.min.css" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{staticUrl}}/libs/bootstrap/ie10-viewport-bug-workaround.css" />
+    <link rel="stylesheet" href="{{staticUrl}}/app/warpjs.min.css" />
+
+{{#if cssFile}}
+    <link rel="stylesheet" href="{{cssFile}}" />
+{{/if}}
+
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+    <link rel="icon" href="/public/favicon.ico" />
+</head>
+
+<body>
+  <div class="page--top no-padding container-fluid">
+    <div class="row warpjs-hi-primary">
+      <div class="col-xs-1 left-right-margin"></div>
+      <div class="col-xs-10">
+        {{> portal-index-top}}
+      </div>
+      <div class="col-xs-1 left-right-margin"></div>
+    </div>
+  </div>
+  <div class="page--header no-padding container-fluid">
+    <header class="header row">
+      <div class="col-xs-1 left-right-margin"></div>
+      <div class="col-xs-10">
+        {{> portal-index-header}}
+      </div>
+      <div class="col-xs-1 left-right-margin"></div>
+    </header>
+  </div>
+
+  <div id="warpjs-content-placeholder">
+    <div style="min-height:100%;">
+    </div>
+  </div>
+
+  <div class="page--footer no-padding container-fluid">
+    <footer class="footer row">
+      <div class="col-xs-1 left-right-margin"></div>
+      <div class="col-xs-10">
+        {{> portal-index-footer}}
+      </div>
+      <div class="col-xs-1 left-right-margin"></div>
+    </footer>
+  </div>
+
+  <script src="{{staticUrl}}/3rd-party/js/jquery.min.js"></script>
+  <script src="{{staticUrl}}/3rd-party/js/bootstrap.min.js"></script>
+  <script src="{{staticUrl}}/3rd-party/js/jquery.toast.min.js"></script>
+{{#each bundles}}
+  <script src="{{this}}"></script>
+{{/each}}
+
+</body>
+
+</html>

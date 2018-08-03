@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.26 - 2018-08-02
+
+- #1: Server-side portal header/footer rendering.
+
 ## 1.2.25 - 2018-08-01
 
 - Portal new header.

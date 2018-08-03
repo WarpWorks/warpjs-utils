@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-xs-4 col-md-3 logo-container">
+    {{#if _links.warpjsLogo.href}}
+        {{#if _links.warpjsHomepage.href}}
+          <a href="{{_links.warpjsHomepage.href}}"><img class="logo"
+            src="{{_links.warpjsLogo.href}}"
+            alt="{{_links.warpjsLogo.title}}" /></a>
+        {{else}}
+          <img class="logo" src="{{_links.warpjsLogo.href}}" alt="{{_links.warpjsLogo.title}}" />
+        {{/if}}
+    {{/if}}
+  </div>
+
+  <div class="col-xs-8 col-md-9 header-items">
+    {{#each _embedded.headerItems as |headerItem|}}
+      <span class="header-item">
+        {{#if headerItem._links.self.href}}
+          <a href="{{headerItem._links.self.href}}">{{headerItem.label}}</a>
+        {{else}}
+          {{headerItem.label}}
+        {{/if}}
+      </span>
+    {{/each}}
+
+    {{#if _embedded.headerMenuItems.length}}
+      <div class="headerMenuItem pull-right">
+        [MENU]
+        {{>menu menuItems=_embedded.headerMenuItems}}
+      </div>
+    {{/if}}
+  </div>
+</div>
