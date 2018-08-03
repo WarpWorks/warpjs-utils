@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.27 - 2018-08-03
+
+- #1: Refactored to use a cached config instead of requiring it.
+
 ## 1.2.26 - 2018-08-02
 
 - #1: Server-side portal header/footer rendering.
