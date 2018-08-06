@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.29 - 2018-08-06
+
+- Refactored to have left-right-margin partial.
+
 ## 1.2.28 - 2018-08-05
 
 - #1: Fixed event handler for search box.
