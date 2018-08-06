@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.28 - 2018-08-05
+
+- #1: Fixed event handler for search box.
+
 ## 1.2.27 - 2018-08-03
 
 - #1: Refactored to use a cached config instead of requiring it.

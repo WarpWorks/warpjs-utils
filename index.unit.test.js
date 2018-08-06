@@ -30,6 +30,7 @@ describe("index", () => {
         [
             ['byPositionThenName', 2],
             ['compareIDs', 2],
+            ['configureHandlebarsApp', 1],
             ['createResource', 2],
             ['documentReady', 1],
             ['getCurrentPageHAL', 2],

@@ -3,6 +3,7 @@ const path = require('path');
 const byPositionThenName = require('./lib/by-position-then-name');
 const cache = require('./lib/cache');
 const compareIDs = require('./lib/compare-ids');
+const configureHandlebarsApp = require('./handlebars/configure');
 const constants = require('./lib/constants');
 const createResource = require('./lib/create-resource');
 const docLevel = require('./lib/doc-level');
@@ -36,6 +37,7 @@ module.exports = {
     byPositionThenName: (left, right) => byPositionThenName(left, right),
     cache,
     compareIDs: (id1, id2) => compareIDs(id1, id2),
+    configureHandlebarsApp: (app) => configureHandlebarsApp(app),
     constants,
     createResource: (reqOrPath, data) => createResource(reqOrPath, data),
 
