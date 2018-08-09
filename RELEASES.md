@@ -1,5 +1,11 @@
 # WarpJS-utils Releases
 
+## 1.2.30 - 2018-08-09
+
+- Refactored index files.
+- Using oswald font from googleapi.
+- Doesn't crash when headerItems are not defined.
+
 ## 1.2.29 - 2018-08-06
 
 - Refactored to have left-right-margin partial.
