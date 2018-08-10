@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.31 - 2018-08-09
+
+- Removed doctype that broke the CSS.
+
 ## 1.2.30 - 2018-08-09
 
 - Refactored index files.
