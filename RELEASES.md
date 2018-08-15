@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.33 - 2018-08-15
+
+- #3: fixed byPositionThenName.
+
 ## 1.2.32 - 2018-08-09
 
 - Fixed JS import order
