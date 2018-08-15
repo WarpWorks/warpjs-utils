@@ -28,6 +28,7 @@ describe("index", () => {
 
         // Functions
         [
+            ['byName', 2],
             ['byPositionThenName', 2],
             ['compareIDs', 2],
             ['configureHandlebarsApp', 1],

@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.34 - 2018-08-15
+
+- Added byName for sorting.
+
 ## 1.2.33 - 2018-08-15
 
 - #3: fixed byPositionThenName.

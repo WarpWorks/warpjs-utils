@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.33",
+  "version": "1.2.34",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "scripts": {
@@ -36,9 +36,9 @@
     "eslint": "4",
     "eslint-config-standard": "11.0.x",
     "eslint-plugin-html": "4.0.x",
-    "eslint-plugin-import": "2.13.x",
+    "eslint-plugin-import": "2.14.x",
     "eslint-plugin-json": "1.2.x",
-    "eslint-plugin-node": "6.0.x",
+    "eslint-plugin-node": "7.0.x",
     "eslint-plugin-promise": "3.8.x",
     "eslint-plugin-standard": "3.1.x",
     "font-awesome": "4.7.0",

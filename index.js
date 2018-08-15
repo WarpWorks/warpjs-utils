@@ -1,5 +1,6 @@
 const path = require('path');
 
+const byName = require('./lib/by-name');
 const byPositionThenName = require('./lib/by-position-then-name');
 const cache = require('./lib/cache');
 const compareIDs = require('./lib/compare-ids');
@@ -34,6 +35,7 @@ module.exports = {
         return path.join(PROJECT_ROOT, 'assets');
     },
 
+    byName: (left, right) => byName(left, right),
     byPositionThenName: (left, right) => byPositionThenName(left, right),
     cache,
     compareIDs: (id1, id2) => compareIDs(id1, id2),

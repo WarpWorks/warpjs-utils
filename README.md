@@ -33,6 +33,11 @@ In `webpack`, you can define these for the helpers:
 
 Path to the folder containing the shared assets.
 
+### .byName(left, right)
+
+Sort function that will order objects by their name.
+
+
 ### .byPositionThenName(left, right)
 
 Sort function that will order objects by their position, then name.
