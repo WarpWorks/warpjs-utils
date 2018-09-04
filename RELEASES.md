@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.35 - 2018-08-24
+
+- Added tinymce to portal-index.
+
 ## 1.2.34 - 2018-08-15
 
 - Added byName for sorting.
