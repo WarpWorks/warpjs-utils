@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.36 - 2018-09-07
+
+- Fixed unclosed HTML.
+
 ## 1.2.35 - 2018-08-24
 
 - Added tinymce to portal-index.
