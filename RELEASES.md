@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.37 - 2018-09-10
+
+- Adding `relnPosition` is the sort by position.
+
 ## 1.2.36 - 2018-09-07
 
 - Fixed unclosed HTML.
