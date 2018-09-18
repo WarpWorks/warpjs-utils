@@ -57,6 +57,7 @@ describe("index", () => {
         // Other basic types.
         [
             ['assetsFolder', 'string'],
+            ['stylePath', 'string'],
             ['cache', 'object'],
             ['constants', 'object'],
             ['docLevel', 'object'],

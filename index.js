@@ -35,6 +35,10 @@ module.exports = {
         return path.join(PROJECT_ROOT, 'assets');
     },
 
+    get stylePath() {
+        return path.join(PROJECT_ROOT, 'styles');
+    },
+
     byName: (left, right) => byName(left, right),
     byPositionThenName: (left, right) => byPositionThenName(left, right),
     cache,

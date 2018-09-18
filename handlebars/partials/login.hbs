@@ -1,6 +1,19 @@
 {{#if warpjsUser}}
-  <div class="pull-right warpjs-user">
+  <div class="pull-right warpjs-user-logged-in">
     Hi {{warpjsUser.Name}}
-    <a href="{{_links.warpjsLogout.href}}"><span title="Log out" class="glyphicon glyphicon-log-out" /></a>
+    <a href="{{_links.warpjsLogout.href}}"><span title="Log out" class="glyphicon glyphicon-log-out"></span></a>
+  </div>
+{{else if _links.warpjsLogin.href}}
+  <div class="pull-right warpjs-user-not-logged-in">
+    <div class="warpjs-login-button">
+      Login
+      <span title="log in" class="glyphicon glyphicon-log-in" data-warpjs-action="login-form"></span>
+    </div>
+    <div class="warpjs-login-form" data-warpjs-url="{{_links.warpjsLogin.href}}">
+      <input class="form-control" type="text" name="username" placeholder="username" required />
+      <input class="form-control" type="password" name="password" placeholder="password" required />
+      <button type="button" class="pull-right" data-warpjs-action="log-in">Login</button>
+      <button type="button" class="pull-right" data-warpjs-action="cancel">Cancel</button>
+    </div>
   </div>
 {{/if}}
