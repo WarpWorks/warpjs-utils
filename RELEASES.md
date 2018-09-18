@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.39 - 2018-09-18
+
+- WarpWorks/warpjs#147: Added "Public Beta" banner.
+
 ## 1.2.38 - 2018-09-18
 
 - WarpWorks/warpjs#146: Preparation for public access.

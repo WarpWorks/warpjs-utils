@@ -12,6 +12,12 @@
 </head>
 
 <body>
+  {{#if _links.topBanner.href}}
+    <div class="warpjs-top-banner">
+      <img src="{{_links.topBanner.href}}" alt="{{_links.topBanner.title}}" />
+    </div>
+  {{/if}}
+
   <div class="page--top no-padding container-fluid">
     <div class="row warpjs-hi-primary">
       {{> left-right-margin}}
