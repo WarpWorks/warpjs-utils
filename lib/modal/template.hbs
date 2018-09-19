@@ -1,0 +1,33 @@
+<div class="modal fade" role="dialog" tabindex="-1" aria-hidden="true"
+  data-warpjs-modal="{{MODAL_NAME}}"
+  >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+          aria-label="Close"
+          ><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title">{{MODAL_TITLE}}</div>
+      </div>
+
+      <div class="modal-body">
+      </div>
+
+      {{#if footerButtons.length}}
+        <div class="modal-footer">
+          {{#each footerButtons as |button|}}
+            <button type="button"
+              class="btn btn-{{#if button.btnClass}}{{button.btnClass}}{{else}}default{{/if}}"
+              {{#if button.action}}
+                data-warpjs-action="{{button.action}}"
+              {{else}}
+                data-dismiss="modal"
+              {{/if}}
+              {{#if button.disabled}}disabled{{/if}}
+              >{{button.label}}</button>
+          {{/each}}
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

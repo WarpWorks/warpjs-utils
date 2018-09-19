@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.40 - 2018-09-19
+
+- WarpWorks/warpjs#160: Added feedback button and simulation.
+
 ## 1.2.39 - 2018-09-18
 
 - WarpWorks/warpjs#147: Added "Public Beta" banner.
