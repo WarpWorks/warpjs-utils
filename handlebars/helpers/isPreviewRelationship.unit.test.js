@@ -10,10 +10,10 @@ describe("handlebars/helpers/isPreviewRelationship", () => {
     });
 
     it("should recognize with correct type", () => {
-        expect(moduleToTest.call({style: 'Preview'})).to.be.true();
+        expect(moduleToTest.call({ style: 'Preview' })).to.be.true();
     });
 
     it("should not recognize with wrong type", () => {
-        expect(moduleToTest.call({style: 'Not Preview'})).to.be.false();
+        expect(moduleToTest.call({ style: 'Not Preview' })).to.be.false();
     });
 });

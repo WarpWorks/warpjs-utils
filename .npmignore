@@ -2,6 +2,7 @@
 /.nyc_output
 /.nycrc
 /*.tgz
+/client
 /grunt
 /Gruntfile.js
 /**/*.test.js

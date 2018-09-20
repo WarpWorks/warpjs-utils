@@ -10,10 +10,10 @@ describe("handlebars/helpers/isOverviewPanel", () => {
     });
 
     it("should recognize with correct type", () => {
-        expect(moduleToTest.call({type: 'Overview'})).to.be.true();
+        expect(moduleToTest.call({ type: 'Overview' })).to.be.true();
     });
 
     it("should not recognize with wrong type", () => {
-        expect(moduleToTest.call({type: 'Not Overview'})).to.be.false();
+        expect(moduleToTest.call({ type: 'Not Overview' })).to.be.false();
     });
 });

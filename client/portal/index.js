@@ -2,8 +2,8 @@ const feedback = require('./feedback');
 const login = require('./login');
 const search = require('./search');
 
-module.exports = ($) => {
+(($) => $(document).ready(() => {
     feedback($);
     login($);
     search($);
-};
+}))(jQuery);

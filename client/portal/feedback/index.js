@@ -1,8 +1,8 @@
 const Promise = require('bluebird');
 
 const bodyTemplate = require('./template.hbs');
-const getModal = require('./../../modal');
-const toast = require('./../../toast');
+const getModal = require('./../../../lib/modal');
+const toast = require('./../../../lib/toast');
 
 const MODAL_NAME = 'portal-feedback';
 const MODAL_SELECTOR = `[data-warpjs-modal="${MODAL_NAME}"]`;

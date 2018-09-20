@@ -8,10 +8,8 @@
     src: url('/public/fonts/oswald/Oswald-Bold.ttf');
 }
 
-@import './warpjs-utils-portal-variables.less';
-@import './warpjs-utils-portal-bootstrap-overwrite.less';
-
-/*  --- warpjs-utils-portal --- */
+@import './variables.less';
+@import './bootstrap-overwrite.less';
 
 body {
     background-color: @default-bg-color;
@@ -281,8 +279,6 @@ a {
     }
 }
 
-/*  --- /warpjs-utils-portal --- */
-
-@import './warpjs-utils-shared.less';
-@import './../lib/modal/style.less';
-@import './../lib/portal-index/feedback/style.less';
+@import './../shared.less';
+@import './../modal/style.less';
+@import './feedback/style.less';

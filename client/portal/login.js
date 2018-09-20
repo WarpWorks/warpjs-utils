@@ -1,7 +1,7 @@
 const Promise = require('bluebird');
 
-const proxy = require('./../proxy');
-const toast = require('./../toast');
+const proxy = require('./../../lib/proxy');
+const toast = require('./../../lib/toast');
 
 function findInput($, element, fieldName) {
     return $(element).closest('.warpjs-login-form').find(`input[name="${fieldName}"]`);

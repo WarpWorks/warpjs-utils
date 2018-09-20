@@ -10,12 +10,12 @@ describe("handlebars/helpers/isBasicProperty", () => {
     });
 
     it("should recognize basic property panel item", () => {
-        const value = moduleToTest.call({type: 'BasicPropertyPanelItem'});
+        const value = moduleToTest.call({ type: 'BasicPropertyPanelItem' });
         expect(value).to.be.true();
     });
 
     it("should recognize non basic property panel item", () => {
-        const value = moduleToTest.call({type: 'not BasicPropertyPanelItem'});
+        const value = moduleToTest.call({ type: 'not BasicPropertyPanelItem' });
         expect(value).to.be.false();
     });
 });

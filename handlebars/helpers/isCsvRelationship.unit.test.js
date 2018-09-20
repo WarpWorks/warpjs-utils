@@ -10,12 +10,12 @@ describe("handlebars/helpers/isCsvRelationship", () => {
     });
 
     it("should recognize csv style", () => {
-        const value = moduleToTest.call({style: 'CSV'});
+        const value = moduleToTest.call({ style: 'CSV' });
         expect(value).to.be.true();
     });
 
     it("should recognize non csv style", () => {
-        const value = moduleToTest.call({style: 'not CSV'});
+        const value = moduleToTest.call({ style: 'not CSV' });
         expect(value).to.be.false();
     });
 });
