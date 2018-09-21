@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Muli';
-    src: url('/public/fonts/muli/Muli.ttf');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    src: url('/public/fonts/oswald/Oswald-Bold.ttf');
-}
+@import './../shared.less';
 
 @import './variables.less';
 @import './bootstrap-overwrite.less';
@@ -100,12 +92,12 @@ a {
                 position: absolute;
                 width: 500px;
                 right: 0;
+                left: 0;
+                margin: auto;
                 z-index: 200;
                 padding: 50px;
                 border-radius: 10px;
                 display: none;
-                left: 50%;
-                margin-left: -250px; // Half of with.
             }
 
             &.show-login-form {
@@ -280,6 +272,5 @@ a {
     }
 }
 
-@import './../shared.less';
 @import './../modal/style.less';
 @import './feedback/style.less';

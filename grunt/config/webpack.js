@@ -12,7 +12,9 @@ module.exports = Object.freeze({
     build: {
         target: 'web',
         entry: {
-            [constants.entryPoints.portal]: './client/portal/index.js'
+            [constants.entryPoints.portal]: './client/portal/index.js',
+            [constants.entryPoints.content]: './client/content/index.js',
+            [constants.entryPoints.studio]: './client/studio/index.js'
         },
         externals: {
             jquery: true

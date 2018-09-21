@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.43 - 2018-09-21
+
+- More work for refactoring of content and studio.
+
 ## 1.2.42 - 2018-09-20
 
 - #146: Minimum work for the login UI waiting for input from designer.

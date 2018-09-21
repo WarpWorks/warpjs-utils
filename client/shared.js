@@ -1,3 +1,5 @@
+const FilterBox = require('@warp-works/warpjs-filter-box');
+
 const byPositionThenName = require('./../lib/by-position-then-name');
 const cache = require('./../lib/cache');
 const constants = require('./../lib/constants');
@@ -20,4 +22,6 @@ module.exports = ($) => {
     window.WarpJS.modal = modal;
     window.WarpJS.proxy = proxy;
     window.WarpJS.toast = toast;
+
+    FilterBox.init($);
 };
