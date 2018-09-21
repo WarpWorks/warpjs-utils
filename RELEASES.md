@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.42 - 2018-09-20
+
+- #146: Minimum work for the login UI waiting for input from designer.
+
 ## 1.2.41 - 2018-09-20
 
 - Update to node 8.12.0 because of `node-gyp` issues.

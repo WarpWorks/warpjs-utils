@@ -8,12 +8,8 @@ function findInput($, element, fieldName) {
 }
 
 module.exports = ($) => {
-    $(document).on('click', '.page--top .warpjs-user-not-logged-in .warpjs-login-button', function(e) {
-        $(this).closest('.warpjs-user-not-logged-in').toggleClass('show-login-form');
-    });
-
-    $(document).on('click', '.page--top .warpjs-user-not-logged-in [data-warpjs-action="cancel"]', function(e) {
-        $(this).closest('.warpjs-user-not-logged-in').toggleClass('show-login-form');
+    $(document).on('click', '[data-warpjs-action="toggle-login-form"]', function(e) {
+        $('.warpjs-user-not-logged-in').toggleClass('show-login-form');
     });
 
     $(document).on('click', '.page--top .warpjs-user-not-logged-in [data-warpjs-action="log-in"]', function(e) {
