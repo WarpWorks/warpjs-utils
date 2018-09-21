@@ -1,17 +1,15 @@
 const Promise = require('bluebird');
 
 const bodyTemplate = require('./template.hbs');
-const getModal = require('./../../../lib/modal');
-const toast = require('./../../../lib/toast');
 
 const MODAL_NAME = 'portal-feedback';
 const MODAL_SELECTOR = `[data-warpjs-modal="${MODAL_NAME}"]`;
 
 function simulate($, data) {
-    const loadingToast = toast.loading($, `choice=${data.choice}; text=${data.text}`, "Simulation");
+    const loadingToast = window.WarpJS.toast.loading($, `choice=${data.choice}; text=${data.text}`, "Simulation");
     return new Promise((resolve) => {
         setTimeout(() => {
-            toast.close($, loadingToast);
+            window.WarpJS.toast.close($, loadingToast);
             resolve();
         }, 3000);
     });
@@ -20,7 +18,7 @@ function simulate($, data) {
 module.exports = ($) => {
     // Open modal when click on "Feedback" button on right side.
     $(document).on('click', '#warpjs-feedback-button', function() {
-        const modal = getModal($, MODAL_NAME, 'Feedback', [
+        const modal = window.WarpJS.modal($, MODAL_NAME, 'Feedback', [
             { label: "Save", btnClass: 'primary', action: 'save', disabled: true },
             { label: "Close" }
         ]);
@@ -45,13 +43,13 @@ module.exports = ($) => {
         };
 
         return Promise.resolve()
-            .then(() => toast.loading($, "Saving feedback..."))
+            .then(() => window.WarpJS.toast.loading($, "Saving feedback..."))
             .then((loadingToast) => Promise.resolve()
                 .then(() => simulate($, data))
                 .then(() => $(MODAL_SELECTOR).modal('hide'))
-                .then(() => toast.success($, "Thank you for your feedback.", "Feedback"))
-                .catch((err) => toast.error($, `Something wrong: ${err.message}`, "Feedback error"))
-                .finally(() => toast.close($, loadingToast))
+                .then(() => window.WarpJS.toast.success($, "Thank you for your feedback.", "Feedback"))
+                .catch((err) => window.WarpJS.toast.error($, `Something wrong: ${err.message}`, "Feedback error"))
+                .finally(() => window.WarpJS.toast.close($, loadingToast))
             )
         ;
     });
