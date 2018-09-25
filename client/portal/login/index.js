@@ -3,8 +3,8 @@ const Promise = require('bluebird');
 const proxy = require('./../../../lib/proxy');
 const toast = require('./../../../lib/toast');
 
-function findInput($, element, fieldName) {
-    return $(element).closest('.warpjs-login-form').find(`input[name="${fieldName}"]`);
+function findInput($, form, fieldName) {
+    return $(form).find(`input[name="${fieldName}"]`);
 }
 
 module.exports = ($) => {
@@ -12,8 +12,9 @@ module.exports = ($) => {
         $('.warpjs-user-not-logged-in').toggleClass('show-login-form');
     });
 
-    $(document).on('click', '.page--top .warpjs-user-not-logged-in [data-warpjs-action="log-in"]', function(e) {
-        const url = $(this).closest('.warpjs-login-form').data('warpjsUrl');
+    $(document).on('submit', 'form.warpjs-login-form[method][action]', function(e) {
+        e.preventDefault();
+
         const data = {
             username: findInput($, this, 'username').val(),
             password: findInput($, this, 'password').val()
@@ -26,6 +27,8 @@ module.exports = ($) => {
             toast.warning($, "Missing password.");
             findInput($, this, 'password').focus();
         } else {
+            const  url = $(this).attr('action');
+
             return Promise.resolve()
                 .then(() => proxy.post($, url, data))
                 .then((res) => document.location.reload())

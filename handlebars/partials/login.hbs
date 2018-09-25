@@ -6,7 +6,7 @@
 {{else if _links.warpjsLogin.href}}
   <div class="pull-right warpjs-user-not-logged-in">
     <button type="button" class="btn" data-warpjs-action="toggle-login-form">Login</button>
-    <div class="warpjs-login-form warpjs-hi-primary" data-warpjs-url="{{_links.warpjsLogin.href}}">
+    <form class="warpjs-login-form warpjs-hi-primary" method="POST" action="{{_links.warpjsLogin.href}}">
       <div class="pull-right">
         <button type="button" data-warpjs-action="toggle-login-form"><span aria-hidden="true">&times;</span></button>
       </div>
@@ -20,11 +20,11 @@
         <input class="form-control" type="password" name="password" placeholder="password" required />
       </div>
       <div class="warpjs-login-button warpjs-login-button-login">
-        <button type="button" class="btn" data-warpjs-action="log-in">Login</button>
+        <button type="submit" class="btn" data-warpjs-action="log-in">Login</button>
       </div>
       <div class="warpjs-login-button warpjs-login-button-cancel">
         <button type="button" class="btn" data-warpjs-action="toggle-login-form">Cancel</button>
       </div>
-    </div>
+    </form>
   </div>
 {{/if}}

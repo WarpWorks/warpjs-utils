@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.47 - 2018-09-25
+
+- WarpWorks/warpjs#146: Login on 'Return' press.
+
 ## 1.2.46 - 2018-09-25
 
 - WarpWorks/warpjs#146: Styling login window.
