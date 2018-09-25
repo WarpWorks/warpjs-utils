@@ -5,7 +5,17 @@
 }
 
 .warpjs-user-not-logged-in {
-    padding-left: 10px;
+    // padding-left: 10px;
+
+    > button {
+        margin-left: 15px;
+        background-color: white;
+        font-size: 12px !important;
+        color: #4a90e2;
+        background-image: none;
+        height: 28px;
+        text-transform: uppercase;
+    }
 
     .warpjs-login-form {
         position: absolute;
@@ -55,14 +65,16 @@
                 border: 0;
             }
 
-            &.warpjs-login-button-cancel .btn {
-                margin-top: 12px;
-                margin-bottom: -50px;
-                background-color: transparent;
-                font-size: 12px;
-                color: #aaaaaa;
-                padding: 7px 80px 8px 80px;
-                border: 0;
+            &.warpjs-login-button-cancel {
+                .btn {
+                    margin-top: 12px;
+                    margin-bottom: -35px;
+                    background-color: transparent;
+                    font-size: 12px;
+                    color: #aaaaaa;
+                    padding: 7px 80px 8px 80px;
+                    border: 0;
+                }
             }
         }
     }

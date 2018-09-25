@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.46 - 2018-09-25
+
+- WarpWorks/warpjs#146: Styling login window.
+
 ## 1.2.45 - 2018-09-25
 
 - WarpWorks/warpjs#146: Styling login window.

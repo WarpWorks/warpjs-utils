@@ -5,9 +5,7 @@
   </div>
 {{else if _links.warpjsLogin.href}}
   <div class="pull-right warpjs-user-not-logged-in">
-    <button type="button" class="btn btn-default" data-warpjs-action="toggle-login-form">
-      Login <span title="log in" class="glyphicon glyphicon-log-in"></span>
-    </button>
+    <button type="button" class="btn" data-warpjs-action="toggle-login-form">Login</button>
     <div class="warpjs-login-form warpjs-hi-primary" data-warpjs-url="{{_links.warpjsLogin.href}}">
       <div class="pull-right">
         <button type="button" data-warpjs-action="toggle-login-form"><span aria-hidden="true">&times;</span></button>
