@@ -1,0 +1,80 @@
+.warpjs-user-logged-in {
+    line-height: 30px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.warpjs-user-not-logged-in {
+    padding-left: 10px;
+
+    .warpjs-login-form {
+        position: absolute;
+        width: 500px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 200;
+        padding: 50px;
+        border-radius: 10px;
+        display: none;
+
+        button[data-warpjs-action="toggle-login-form"] {
+            background-color: transparent;
+            border: 0;
+            padding-right: 0;
+            font-size: 40px;
+        }
+
+        .warpjs-title {
+            margin-bottom: 30px;
+            font-size: 24px;
+            padding-bottom: 12px;
+            font-family: @warpjs-primary-font-family;
+        }
+
+        .warpjs-login-input {
+            input {
+                width: 100%;
+                padding: 12px;
+                border: 0px;
+                margin-bottom: 6px;
+                font-size: 16px;
+            }
+        }
+
+        .warpjs-login-button {
+            text-align: center;
+
+            &.warpjs-login-button-login .btn {
+                background-color: #4a90e2;
+                font-size: 18px;
+                color: white;
+                padding: 7px 80px 8px 80px;
+                margin-top: 20px;
+                border-radius: 4px;
+                border: 0;
+            }
+
+            &.warpjs-login-button-cancel .btn {
+                margin-top: 12px;
+                margin-bottom: -50px;
+                background-color: transparent;
+                font-size: 12px;
+                color: #aaaaaa;
+                padding: 7px 80px 8px 80px;
+                border: 0;
+            }
+        }
+    }
+
+    &.show-login-form {
+        .warpjs-login-form {
+            display: block;
+        }
+    }
+
+    .warpjs-login-button {
+        line-height: 30px;
+        cursor: pointer;
+    }
+}

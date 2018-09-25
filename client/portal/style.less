@@ -56,7 +56,7 @@ a {
 
         .btn {
             font-size: inherit;
-            line-height: 1;
+            line-height: 1.4em;
             border-radius: 50px;
         }
 
@@ -77,39 +77,6 @@ a {
         .warpjs-user {
             line-height: 25px;
             padding-left: 10px;
-        }
-
-        .warpjs-user-logged-in {
-            line-height: 30px;
-            padding-left: 10px;
-            margin-bottom: 0px;
-        }
-
-        .warpjs-user-not-logged-in {
-            padding-left: 10px;
-
-            .warpjs-login-form {
-                position: absolute;
-                width: 500px;
-                right: 0;
-                left: 0;
-                margin: auto;
-                z-index: 200;
-                padding: 50px;
-                border-radius: 10px;
-                display: none;
-            }
-
-            &.show-login-form {
-                .warpjs-login-form {
-                    display: block;
-                }
-            }
-
-            .warpjs-login-button {
-                line-height: 30px;
-                cursor: pointer;
-            }
         }
     }
 }
@@ -274,3 +241,4 @@ a {
 
 @import './../modal/style.less';
 @import './feedback/style.less';
+@import './login/style.less';
