@@ -19,7 +19,9 @@
     </div>
   {{/if}}
 
-  <div id="warpjs-feedback-button">Feedback</div>
+  {{#if _links.feedback.href}}
+    <div id="warpjs-feedback-button" data-warpjs-url="{{_links.feedback.href}}">Feedback</div>
+  {{/if}}
 
   <div class="page--top no-padding container-fluid">
     <div class="row warpjs-hi-primary">

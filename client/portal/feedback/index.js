@@ -5,16 +5,6 @@ const bodyTemplate = require('./template.hbs');
 const MODAL_NAME = 'portal-feedback';
 const MODAL_SELECTOR = `[data-warpjs-modal="${MODAL_NAME}"]`;
 
-function simulate($, data) {
-    const loadingToast = window.WarpJS.toast.loading($, `choice=${data.choice}; text=${data.text}`, "Simulation");
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            window.WarpJS.toast.close($, loadingToast);
-            resolve();
-        }, 3000);
-    });
-}
-
 module.exports = ($) => {
     // Open modal when click on "Feedback" button on right side.
     $(document).on('click', '#warpjs-feedback-button', function() {
@@ -23,7 +13,9 @@ module.exports = ($) => {
             { label: "Close" }
         ]);
 
-        $('> .modal-dialog > .modal-content > .modal-body', modal).html(bodyTemplate({}));
+        $('> .modal-dialog > .modal-content > .modal-body', modal).html(bodyTemplate({
+            href: $(this).data('warpjsUrl')
+        }));
 
         modal.modal('show');
     });
@@ -37,15 +29,18 @@ module.exports = ($) => {
     $(document).on('click', `${MODAL_SELECTOR} .modal-footer [data-warpjs-action="save"]`, function() {
         const form = $(`${MODAL_SELECTOR} .modal-body form`);
 
+        const url = $(this).closest(MODAL_SELECTOR).find('form[action]').attr('action');
+
         const data = {
             choice: $('input[name="choice"]:checked', form).val(),
-            text: $('[name="text"]', form).val()
+            text: $('[name="text"]', form).val(),
+            href: document.location.href
         };
 
         return Promise.resolve()
             .then(() => window.WarpJS.toast.loading($, "Saving feedback..."))
             .then((loadingToast) => Promise.resolve()
-                .then(() => simulate($, data))
+                .then(() => window.WarpJS.proxy.post($, url, data))
                 .then(() => $(MODAL_SELECTOR).modal('hide'))
                 .then(() => window.WarpJS.toast.success($, "Thank you for your feedback.", "Feedback"))
                 .catch((err) => window.WarpJS.toast.error($, `Something wrong: ${err.message}`, "Feedback error"))

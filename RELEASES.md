@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.44 - 2018-09-24
+
+- WarpWorks/warpjs#148: Making POST to portal.
+
 ## 1.2.43 - 2018-09-21
 
 - More work for refactoring of content and studio.
