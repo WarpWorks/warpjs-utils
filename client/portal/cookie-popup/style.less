@@ -1,0 +1,79 @@
+.warpjs-cookie-popup-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 20000;
+    min-height: 50px;
+    display: table;
+    width: 100%;
+    padding: 18px 0;
+    color: white;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &.warpjs-hide-details {
+        .warpjs-cookie-details {
+            display: none;
+        }
+    }
+
+    .warpjs-cookie-popup-content {
+        width: calc(~"100% - 200px");
+        display: table-cell;
+
+        .warpjs-legal-notice-content {
+            margin-bottom: 50px;
+        }
+
+        .warpjs-cookie-popup {
+        }
+
+        .warpjs-cookie-details {
+            margin-top: 20px;
+
+            table {
+                border-color: white;
+                color: white;
+
+                tr:first-child {
+                    background-color: white;
+                    color: #333333;
+                }
+
+                tr {
+                    td {
+                        padding: 5px 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .warpjs-cookie-popup-info {
+        width: 200px;
+        display: table-cell;
+        vertical-align: bottom;
+        text-align:right;
+
+        .warpjs-details-link {
+            margin-bottom: 20px;
+            color: #1897BC;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #1897BC;
+            color: white;
+
+            &:hover, &:focus {
+                color: white;
+            }
+        }
+    }
+}

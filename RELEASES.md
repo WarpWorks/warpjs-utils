@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.48 - 2018-09-26
+
+- WarpWorks/warpjs#124: Portal: Display cookie disclaimer.
+
 ## 1.2.47 - 2018-09-25
 
 - WarpWorks/warpjs#146: Login on 'Return' press.

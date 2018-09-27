@@ -18,7 +18,9 @@ module.exports = {
             '!*.test.js',
             'grunt/**/*.js',
             'lib/**/*.js',
-            '!lib/**/*.test.js'
+            '!lib/**/*.test.js',
+            'server/**/*.js',
+            '!server/**/*.test.js'
         ]
     },
     test: {

@@ -63,6 +63,7 @@ describe("index", () => {
             ['docLevel', 'object'],
             ['output', 'object'],
             ['proxy', 'object'],
+            ['server', 'object'],
             ['toast', 'object']
         ].forEach((info) => it(`should expose ${info[1]} '${info[0]}'`, () => {
             expect(moduleToTest).to.have.property(info[0]);
