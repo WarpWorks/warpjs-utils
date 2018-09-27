@@ -22,7 +22,6 @@ module.exports = async (persistence, config, domain, key) => {
     const cached = cache[domain.name][key];
 
     if (cached && cached.expiry && cached.expiry > Date.now()) {
-        console.log("hit cache get-custom-message");
         return cached.instance;
     } else {
         const relationship = await getAdminConfigRelationship(persistence, config, domain, 'CustomMessage');
