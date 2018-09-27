@@ -26,6 +26,12 @@ module.exports = ($) => {
         $(`${MODAL_SELECTOR} button[data-warpjs-action="save"]`).prop('disabled', false);
     });
 
+    $(document).on('submit', `${MODAL_SELECTOR} form`, function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(`${MODAL_SELECTOR} .modal-footer [data-warpjs-action="save"]`).trigger('click');
+    });
+
     $(document).on('click', `${MODAL_SELECTOR} .modal-footer [data-warpjs-action="save"]`, function() {
         const form = $(`${MODAL_SELECTOR} .modal-body form`);
 
@@ -34,6 +40,7 @@ module.exports = ($) => {
         const data = {
             choice: $('input[name="choice"]:checked', form).val(),
             text: $('[name="text"]', form).val(),
+            contact: $('[name="contact"]', form).val(),
             href: document.location.href
         };
 
