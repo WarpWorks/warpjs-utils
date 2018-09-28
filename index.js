@@ -62,7 +62,7 @@ module.exports = {
     sendError: (req, res, RoutesInfo, err) => sendError(req, res, RoutesInfo, err),
     sendErrorHal: (req, res, resource, err, RoutesInfo, status) => sendErrorHal(req, res, resource, err, RoutesInfo, status),
     sendHal: (req, res, resource, RoutesInfo, status) => sendHal(req, res, resource, RoutesInfo, status),
-    sendIndex: (res, title, bundles, cssFile) => sendIndex(res, title, bundles, cssFile),
+    sendIndex: (req, res, RoutesInfo, title, bundles, cssFile) => sendIndex(req, res, RoutesInfo, title, bundles, cssFile),
     sendPortalIndex: (req, res, RoutesInfo, title, bundles, cssFile) => sendPortalIndex(req, res, RoutesInfo, title, bundles, cssFile),
     server,
     toast,

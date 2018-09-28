@@ -3,6 +3,7 @@
 <head>
   {{> common-index-header}}
 
+  <link rel="stylesheet" href="{{staticUrl}}/app/{{_links.warpjsUtilsCss.href}}" />
   <link rel="stylesheet" href="{{staticUrl}}/app/warpjs.min.css" />
 
   {{#if cssFile}}
@@ -11,6 +12,16 @@
 </head>
 
 <body>
+  {{#if _links.topBanner.href}}
+    <div id="warpjs-top-banner">
+      <img src="{{_links.topBanner.href}}" alt="{{_links.topBanner.title}}" />
+    </div>
+  {{/if}}
+
+  {{#if _links.feedback.href}}
+    <div id="warpjs-feedback-button" data-warpjs-url="{{_links.feedback.href}}">Feedback</div>
+  {{/if}}
+
   <div id="warpjs-content-placeholder"></div>
 
   {{> common-index-body-bottom}}

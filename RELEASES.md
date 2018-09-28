@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.50 - 2018-09-28
+
+- Updated `sendIndex()` to also have banner and feedback.
+
 ## 1.2.48 - 2018-09-26
 
 - WarpWorks/warpjs#124: Portal: Display cookie disclaimer.

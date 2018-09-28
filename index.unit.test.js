@@ -43,7 +43,7 @@ describe("index", () => {
             ['sendError', 4],
             ['sendErrorHal', 6],
             ['sendHal', 5],
-            ['sendIndex', 4],
+            ['sendIndex', 6],
             ['sendPortalIndex', 6],
             ['trace', 5],
             ['urlFormat', 2],
