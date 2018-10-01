@@ -9,6 +9,7 @@ const constants = require('./lib/constants');
 const createResource = require('./lib/create-resource');
 const docLevel = require('./lib/doc-level');
 const documentReady = require('./lib/document-ready');
+const expandUrlTemplate = require('./lib/expand-url-template');
 const getCurrentPageHAL = require('./lib/get-current-page-hal');
 const getHandlebarsHelpersDir = require('./lib/get-handlebars-helpers-dir');
 const getHandlebarsPartialsDir = require('./lib/get-handlebars-partials-dir');
@@ -51,6 +52,7 @@ module.exports = {
     /** @deprecated */
     docLevel,
     documentReady: ($) => documentReady($),
+    expandUrlTemplate: (templated, data) => expandUrlTemplate(templated, data),
     getCurrentPageHAL: ($, url) => getCurrentPageHAL($, url),
     getHandlebarsHelpersDir: () => getHandlebarsHelpersDir(),
     getHandlebarsPartialsDir: () => getHandlebarsPartialsDir(),

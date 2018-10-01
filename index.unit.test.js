@@ -34,6 +34,7 @@ describe("index", () => {
             ['configureHandlebarsApp', 1],
             ['createResource', 2],
             ['documentReady', 1],
+            ['expandUrlTemplate', 2],
             ['getCurrentPageHAL', 2],
             ['getHandlebarsHelpersDir', 0],
             ['getHandlebarsPartialsDir', 0],

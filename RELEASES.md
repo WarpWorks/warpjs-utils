@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.51 - 2018-09-30
+
+- Adding `expandUrlTemplate(templated, data)`.
+
 ## 1.2.50 - 2018-09-28
 
 - Updated `sendIndex()` to also have banner and feedback.
