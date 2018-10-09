@@ -7,7 +7,7 @@
         <button type="button" class="close" data-dismiss="modal"
           aria-label="Close"
           ><span aria-hidden="true">&times;</span></button>
-        <div class="modal-title">{{MODAL_TITLE}}</div>
+        <div class="modal-title">{{#if MODAL_TITLE_HTML}}{{{MODAL_TITLE_HTML}}}{{else}}{{MODAL_TITLE}}{{/if}}</div>
       </div>
 
       <div class="modal-body">

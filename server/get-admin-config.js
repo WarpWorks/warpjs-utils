@@ -1,3 +1,5 @@
+const { CACHE_EXPIRY } = require('./constants');
+
 //  Assuming the id is pretty much unique, let's use it as the key for the
 //  caching. Format:
 //
@@ -21,7 +23,7 @@ module.exports = async (persistence, config, domain) => {
     } else {
         const instance = await entity.getInstance(persistence, config.adminConfig.id);
         cached.instance = instance;
-        cached.expiry = Date.now() + 600000; // 10min.
+        cached.expiry = Date.now() + CACHE_EXPIRY;
         return { entity, instance };
     }
 };

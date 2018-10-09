@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.52 - 2018-10-08
+
+- Refactoring customMessages. Allow HTML in modal header.
+
 ## 1.2.51 - 2018-09-30
 
 - Adding `expandUrlTemplate(templated, data)`.
