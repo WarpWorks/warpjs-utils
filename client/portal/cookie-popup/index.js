@@ -3,7 +3,7 @@ const Promise = require('bluebird');
 const template = require('./template.hbs');
 
 module.exports = ($, customMessages, acceptCookies) => {
-    if (customMessages && customMessages.PortalCookiePopup) {
+    if (customMessages && customMessages.PortalCookiePopup && acceptCookies && acceptCookies.href) {
         $('body').append(template({ customMessages }));
 
         $(document).on('click', '.warpjs-cookie-popup-container .warpjs-cookie-popup-info .warpjs-details-link', function(e) {

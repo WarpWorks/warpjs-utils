@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.53 - 2018-10-08
+
+- Display cookie warning only if link also available.
+
 ## 1.2.52 - 2018-10-08
 
 - Refactoring customMessages. Allow HTML in modal header.
