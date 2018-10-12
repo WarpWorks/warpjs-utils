@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.54 - 2018-10-12
+
+- Added option to set the URL instead of selecting an existing document to
+  header items.
+
 ## 1.2.53 - 2018-10-08
 
 - Display cookie warning only if link also available.
