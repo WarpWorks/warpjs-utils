@@ -8,6 +8,9 @@ const jsFolder = path.join(assetsFolder, 'js');
 const cssFolder = path.join(assetsFolder, 'css');
 const fontsFolder = path.join(assetsFolder, 'fonts');
 
+const reactFolder = path.dirname(require.resolve('react/package.json'));
+const reactDomFolder = path.dirname(require.resolve('react-dom/package.json'));
+
 module.exports = {
     'jquery': {
         files: [{
@@ -77,6 +80,18 @@ module.exports = {
             dest: cssFolder,
             src: [
                 'node_modules/jquery-toast-plugin/dist/*.css'
+            ]
+        }]
+    },
+
+    'react': {
+        files: [{
+            expand,
+            flatten,
+            dest: jsFolder,
+            src: [
+                path.join(reactFolder, 'umd', 'react.production.min.js'),
+                path.join(reactDomFolder, 'umd', 'react-dom.production.min.js')
             ]
         }]
     }

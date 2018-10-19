@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.55 - 2018-10-19
+
+- Adding `react` and `react-dom`.
+
 ## 1.2.54 - 2018-10-12
 
 - Added option to set the URL instead of selecting an existing document to
