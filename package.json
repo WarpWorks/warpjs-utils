@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.55",
+  "version": "1.2.56",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "engineStrict": true,
@@ -65,8 +65,10 @@
     "load-grunt-config": "0.19.x",
     "mocha": "5.2.x",
     "nyc": "13.0.x",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "~16.5.2",
+    "react-bootstrap": "~0.32.4",
+    "react-dom": "~16.5.2",
+    "react-redux": "~5.0.7",
     "time-grunt": "1.4.x",
     "webpack": "~2.7.0",
     "webpack-visualizer-plugin": "~0.1.11"

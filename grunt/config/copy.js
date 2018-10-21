@@ -1,98 +1,49 @@
 const path = require('path');
 
-const expand = true;
-const flatten = true;
+const filesConfig = require('./../files-config');
 
 const assetsFolder = 'assets';
 const jsFolder = path.join(assetsFolder, 'js');
 const cssFolder = path.join(assetsFolder, 'css');
 const fontsFolder = path.join(assetsFolder, 'fonts');
 
-const reactFolder = path.dirname(require.resolve('react/package.json'));
-const reactDomFolder = path.dirname(require.resolve('react-dom/package.json'));
-
 module.exports = {
     'jquery': {
-        files: [{
-            expand,
-            flatten,
-            dest: jsFolder,
-            src: [
-                'node_modules/jquery/dist/jquery.min.js'
-            ]
-        }]
+        files: [
+            filesConfig(jsFolder, [{ packageName: 'jquery', filePath: 'dist/jquery.min.js' }])
+        ]
     },
 
     'bootstrap': {
-        files: [{
-            expand,
-            flatten,
-            dest: jsFolder,
-            src: [
-                'node_modules/bootstrap/dist/js/bootstrap*.min*'
-            ]
-        }, {
-            expand,
-            flatten,
-            dest: cssFolder,
-            src: [
-                'node_modules/bootstrap/dist/css/bootstrap*.min*'
-            ]
-        }, {
-            expand,
-            flatten,
-            dest: fontsFolder,
-            src: [
-                'node_modules/bootstrap/fonts/*'
-            ]
-        }]
+        files: [
+            filesConfig(jsFolder, [{ packageName: 'bootstrap', filePath: 'dist/js/bootstrap*.min*' }]),
+            filesConfig(cssFolder, [{ packageName: 'bootstrap', filePath: 'dist/css/bootstrap*.min*' }]),
+            filesConfig(fontsFolder, [{ packageName: 'bootstrap', filePath: 'fonts/*' }])
+        ]
     },
 
     'font-awesome': {
-        files: [{
-            expand,
-            flatten,
-            dest: cssFolder,
-            src: [
-                'node_modules/font-awesome/css/font-awesome.min*'
-            ]
-        }, {
-            expand,
-            flatten,
-            dest: fontsFolder,
-            src: [
-                'node_modules/font-awesome/fonts/*'
-            ]
-        }]
+        files: [
+            filesConfig(cssFolder, [{ packageName: 'font-awesome', filePath: 'css/font-awesome.min*' }]),
+            filesConfig(fontsFolder, [{ packageName: 'font-awesome', filePath: 'fonts/*' }])
+        ]
     },
 
     'toast': {
-        files: [{
-            expand,
-            flatten,
-            dest: jsFolder,
-            src: [
-                'node_modules/jquery-toast-plugin/dist/*.js'
-            ]
-        }, {
-            expand,
-            flatten,
-            dest: cssFolder,
-            src: [
-                'node_modules/jquery-toast-plugin/dist/*.css'
-            ]
-        }]
+        files: [
+            filesConfig(jsFolder, [{ packageName: 'jquery-toast-plugin', filePath: 'dist/*.js' }]),
+            filesConfig(cssFolder, [{ packageName: 'jquery-toast-plugin', filePath: 'dist/*.css' }])
+        ]
     },
 
     'react': {
-        files: [{
-            expand,
-            flatten,
-            dest: jsFolder,
-            src: [
-                path.join(reactFolder, 'umd', 'react.production.min.js'),
-                path.join(reactDomFolder, 'umd', 'react-dom.production.min.js')
-            ]
-        }]
+        files: [
+            filesConfig(jsFolder, [
+                { packageName: 'react', filePath: 'umd/react.production.min.js' },
+                { packageName: 'react-dom', filePath: 'umd/react-dom.production.min.js' },
+                { packageName: 'react-bootstrap', filePath: 'dist/react-bootstrap.min.js' },
+                { packageName: 'react-redux', filePath: 'dist/react-redux.min.js' }
+            ])
+        ]
     }
 };

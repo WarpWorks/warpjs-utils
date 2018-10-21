@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.56 - 2018-10-20
+
+- Adding `react-bootstrap` and `react-redux`.
+
 ## 1.2.55 - 2018-10-19
 
 - Adding `react` and `react-dom`.
