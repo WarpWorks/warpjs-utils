@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.57",
+  "version": "1.2.58",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "engineStrict": true,
@@ -69,7 +69,9 @@
     "react-bootstrap": "~0.32.4",
     "react-dom": "~16.5.2",
     "react-redux": "~5.0.7",
+    "redux": "^4.0.1",
     "time-grunt": "1.4.x",
+    "tinymce": "^4.7.3",
     "webpack": "~2.7.0",
     "webpack-visualizer-plugin": "~0.1.11"
   },

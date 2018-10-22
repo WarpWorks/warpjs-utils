@@ -1,16 +1,16 @@
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{staticUrl}}/3rd-party/js/jquery.min.js"></script>
-<script src="{{staticUrl}}/3rd-party/js/bootstrap.min.js"></script>
-<script src="{{staticUrl}}/3rd-party/js/jquery.toast.min.js"></script>
-<script src="{{staticUrl}}/3rd-party/js/react.production.min.js"></script>
-<script src="{{staticUrl}}/3rd-party/js/react-dom.production.min.js"></script>
-<script src="{{staticUrl}}/3rd-party/js/react-bootstrap.min.js"></script>
-<script src="{{staticUrl}}/3rd-party/js/react-redux.min.js"></script>
+<script src="{{coreUrl}}/js/jquery.min.js"></script>
+<script src="{{coreUrl}}/js/bootstrap.min.js"></script>
+<script src="{{coreUrl}}/js/jquery.toast.min.js"></script>
+<script src="{{coreUrl}}/js/react.production.min.js"></script>
+<script src="{{coreUrl}}/js/react-dom.production.min.js"></script>
+<script src="{{coreUrl}}/js/react-bootstrap.min.js"></script>
+<script src="{{coreUrl}}/js/react-redux.min.js"></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{staticUrl}}/libs/bootstrap/ie10-viewport-bug-workaround.js"></script>
 
-<script src="{{staticUrl}}/app/{{_links.warpjsUtilsJs.href}}"></script>
+<script src="{{coreUrl}}/js/{{_links.warpjsUtilsJs.href}}"></script>
 
 {{#each bundles as |bundle|}}
   <script src="{{bundle}}"></script>
