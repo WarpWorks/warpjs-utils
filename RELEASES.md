@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.59 - 2018-10-22
+
+- update css url.
+
 ## 1.2.57 - 2018-10-22
 
 - Very link before adding it.

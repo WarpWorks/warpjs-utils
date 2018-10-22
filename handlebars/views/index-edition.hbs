@@ -5,7 +5,7 @@
 <head>
   {{> common-index-header}}
 
-  <link rel="stylesheet" href="{{staticUrl}}/libs/bootstrap/theme.css" />
+  <link rel="stylesheet" href="{{coreUrl}}/css/bootstrap-theme.min.css" />
   <link rel="stylesheet" href="{{staticUrl}}/app/warpjs-edition.min.css" />
 
   {{#if cssFile}}
@@ -16,7 +16,7 @@
 <body {{#if isStudio}}class="warpjs-studio"{{/if}}>
   <div id="warpjs-content-placeholder"></div>
 
-  <script src="{{staticUrl}}/3rd-party/js/tinymce.min.js"></script>
+  <script src="{{staticUrl}}/js/tinymce.min.js"></script>
   <script src="{{staticUrl}}/libs/custom-links-modal.js"></script>
 
   {{> common-index-body-bottom}}
