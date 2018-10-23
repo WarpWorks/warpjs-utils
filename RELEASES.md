@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.61 - 2018-10-23
+
+- fix another link.
+
 ## 1.2.60 - 2018-10-23
 
 - bump version.
