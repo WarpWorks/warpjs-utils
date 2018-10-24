@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+
+## 1.2.62 - 2018-10-24
+
+- Set tinymce version to 4.7.3.
+
 ## 1.2.61 - 2018-10-23
 
 - fix another link.
