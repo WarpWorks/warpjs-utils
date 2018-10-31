@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.64 - 2018-10-31
+
+- Adding `flattenHAL` to `window.WarpJS`.
+
 ## 1.2.63 - 2018-10-31
 
 - #183 Make nav not fixed position in studio and content.
