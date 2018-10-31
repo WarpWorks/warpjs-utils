@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.65 - 2018-10-31
+
+- #184 Basic google analytics.
+
 ## 1.2.64 - 2018-10-31
 
 - Adding `flattenHAL` to `window.WarpJS`.
