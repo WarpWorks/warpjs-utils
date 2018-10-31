@@ -1,5 +1,8 @@
 # WarpJS-utils Releases
 
+## 1.2.63 - 2018-10-31
+
+- #183 Make nav not fixed position in studio and content.
 
 ## 1.2.62 - 2018-10-24
 
