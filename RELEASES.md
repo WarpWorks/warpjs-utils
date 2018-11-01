@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.66 - 2018-10-31
+
+- #184 Update: google analytics api key moved to rc files.
+
 ## 1.2.65 - 2018-10-31
 
 - #184 Basic google analytics.
