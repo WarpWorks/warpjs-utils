@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.67 - 2018-11-06
+
+- Adding window.WarpJS.bareModal($, NAME).
+
 ## 1.2.66 - 2018-10-31
 
 - #184 Update: google analytics api key moved to rc files.

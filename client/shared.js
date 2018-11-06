@@ -1,5 +1,6 @@
 const FilterBox = require('@warp-works/warpjs-filter-box');
 
+const bareModal = require('./bare-modal');
 const byPositionThenName = require('./../lib/by-position-then-name');
 const cache = require('./../lib/cache');
 const constants = require('./../lib/constants');
@@ -18,6 +19,7 @@ module.exports = ($) => {
     window.WarpJS.HAL_CONTENT_TYPE = constants.HAL_CONTENT_TYPE;
     window.WarpJS.CONTENT_PLACEHOLDER = constants.CONTENT_PLACEHOLDER;
 
+    window.WarpJS.bareModal = bareModal;
     window.WarpJS.byPositionThenName = byPositionThenName;
     window.WarpJS.cache = cache;
     window.WarpJS.expandUrlTemplate = expandUrlTemplate;
