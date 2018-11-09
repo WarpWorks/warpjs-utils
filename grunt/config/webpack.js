@@ -17,7 +17,12 @@ module.exports = Object.freeze({
             [constants.entryPoints.studio]: './client/studio/index.js'
         },
         externals: {
-            jquery: true
+            'jquery': 'jQuery',
+            'tinymce': 'tinyMCE',
+            'react': 'React',
+            'react-dom': 'ReactDOM',
+            'react-bootstrap': 'ReactBootstrap',
+            'react-redux': 'ReactRedux'
         },
         node: {
             fs: 'empty'
@@ -26,8 +31,19 @@ module.exports = Object.freeze({
             path: path.join(rootDir, constants.folders.assets, 'js'),
             filename: '[name].min.js'
         },
+        resolve: {
+            extensions: [ '.jsx', '.js' ]
+        },
         plugins: [
-            new WebpackVisualizer(),
+            new webpack.EnvironmentPlugin({
+                NODE_ENV: 'production',
+                DEBUG: false
+            }),
+
+            new WebpackVisualizer({
+                filename: './../../reports/webpack-visualizer.html'
+            }),
+
             new webpack.optimize.UglifyJsPlugin({
                 compress: false,
                 output: {
@@ -38,7 +54,7 @@ module.exports = Object.freeze({
         module: {
             loaders: [
                 {
-                    test: /\.js$/,
+                    test: /\.jsx?$/,
                     loader: 'babel-loader'
                 },
                 {

@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.68 - 2018-11-09
+
+- Adding some react-utils.
+
 ## 1.2.67 - 2018-11-06
 
 - Adding window.WarpJS.bareModal($, NAME).
