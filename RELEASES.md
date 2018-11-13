@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.69 - 2018-11-13
+
+- Adding few more `window.WarpJS.ReactUtils` functions and components.
+- Adding FilterInput and FilterableList components (WIP).
+
 ## 1.2.68 - 2018-11-09
 
 - Adding some react-utils.

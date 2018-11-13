@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.68",
+  "version": "1.2.69",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "engineStrict": true,
@@ -69,6 +69,7 @@
     "load-grunt-config": "0.19.x",
     "mocha": "5.2.x",
     "nyc": "13.0.x",
+    "prop-types": "~15.6.2",
     "react": "~16.5.2",
     "react-bootstrap": "~0.32.4",
     "react-dom": "~16.5.2",
