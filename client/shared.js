@@ -1,3 +1,7 @@
+// eslint-disable-next-line no-unused-vars
+import regeneratorRuntime from 'babel-regenerator-runtime';
+
+import * as ReactComponents from './react-utils/components';
 import * as ReactUtils from './react-utils';
 
 const FilterBox = require('@warp-works/warpjs-filter-box');
@@ -31,6 +35,7 @@ window.WarpJS.proxy = proxy;
 window.WarpJS.toast = toast;
 
 window.WarpJS.ReactUtils = ReactUtils;
+window.WarpJS.ReactComponents = ReactComponents;
 
 module.exports = ($) => {
     FilterBox.init($);

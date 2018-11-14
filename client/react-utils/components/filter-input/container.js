@@ -2,7 +2,7 @@ import cloneDeep from 'lodash/cloneDeep';
 
 import * as actionCreators from './action-creators';
 import Component from './component.jsx';
-import selector from './../selector-base';
+import selector from './../selector';
 import wrapContainer from './../wrap-container';
 
 const mapStateToProps = (state, ownProps) => {

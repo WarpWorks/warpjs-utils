@@ -1,11 +1,11 @@
 export { default as actionCreator } from './action-creator';
 export { default as baseComponentName } from './base-component-name';
 export { default as concatenateReducers } from './concatenate-reducers';
+export { default as createStore } from './create-store';
 export { default as errorBoundary } from './error-boundary';
 export { default as guardAction } from './guard-action';
 export { default as initReactBootstrapDisplayNames } from './init-react-bootstrap-display-names';
 export { default as namespace } from './namespace';
 export { default as namespaceKeys } from './namespace-keys';
-export { default as reducers } from './reducers';
 export { default as selector } from './selector';
 export { default as wrapContainer } from './wrap-container';

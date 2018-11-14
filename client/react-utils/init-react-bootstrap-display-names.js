@@ -15,11 +15,14 @@ export default () => {
         'Button',
         'Col',
         'ControlLabel',
+        'Form',
         'FormControl',
         'FormGroup',
         'Glyphicon',
         'Grid',
         'HelpBlock',
+        'ListGroup',
+        'ListGroupItem',
         'Row'
     ].forEach((componentName) => setDisplayName(ReactBootstrap, componentName));
 };

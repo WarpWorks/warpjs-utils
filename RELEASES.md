@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.70 - 2018-11-14
+
+- Added `window.WarpJS.ReactComponents` for shared components.
+- Added AutoSaveField component.
+
 ## 1.2.69 - 2018-11-13
 
 - Adding few more `window.WarpJS.ReactUtils` functions and components.

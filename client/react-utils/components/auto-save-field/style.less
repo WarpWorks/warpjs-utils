@@ -1,0 +1,43 @@
+.warpjs-auto-save-field {
+    &.has-feedback {
+        .warpjs-auto-save-field-input.form-control {
+            height: auto;
+            padding: 0 6px;
+
+            &:focus {
+                background-color: #f5f5f5;
+            }
+        }
+
+        .form-control-feedback {
+            height: auto;
+            width: auto;
+            line-height: 1.4em;
+            right: 10px;
+        }
+
+        &.warpjs-auto-save-field-status-clean {
+            .form-control-feedback {
+                color: transparent;
+            }
+        }
+
+        &.warpjs-auto-save-field-status-dirty {
+        }
+
+        &.warpjs-auto-save-field-status-error {
+        }
+
+        &.warpjs-auto-save-field-status-saved {
+            .form-control {
+                pointer-events: none;
+            }
+        }
+
+        &.warpjs-auto-save-field-status-saving {
+            .form-control {
+                pointer-events: none;
+            }
+        }
+    }
+}

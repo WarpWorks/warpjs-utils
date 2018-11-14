@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { FormControl, FormGroup, Glyphicon, InputGroup } from 'react-bootstrap';
 
-import errorBoundary from './../error-boundary';
+import errorBoundary from './../../error-boundary';
 
 const Component = (props) => {
     return (

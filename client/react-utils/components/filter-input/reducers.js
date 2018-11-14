@@ -2,8 +2,8 @@ import cloneDeep from 'lodash/cloneDeep';
 
 import actions from './actions';
 import Component from './component.jsx';
-import concatenateReducers from './../concatenate-reducers';
-import selector from './../selector-base';
+import concatenateReducers from './../../concatenate-reducers';
+import selector from './../selector';
 
 const updateValue = (state = {}, action) => {
     const cloned = cloneDeep(state);
