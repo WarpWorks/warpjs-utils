@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => {
     const status = subState ? subState.status : constants.STATUS.CLEAN;
 
     return Object.freeze({
-        autoSaveFieldStatus: status,
+        autoSaveFieldStatus: status || constants.STATUS.CLEAN,
         autoSaveFieldValidationState: constants.validationStateByStatus(status)
     });
 };
