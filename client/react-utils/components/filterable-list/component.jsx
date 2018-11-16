@@ -11,9 +11,10 @@ const Component = (props) => {
             <div className="warpjs-filterable-list-filter">
                 <FormGroup>
                     <FormControl type="text"
-                        value={props.filterValue}
+                        value={props.filterableListValue}
                         placeholder="Filter items"
                         className="warpjs-filterable-list-filter-input"
+                        onChange={props.filterableListChanged}
                     />
                     <FormControl.Feedback>
                         <Glyphicon glyph="filter" />
@@ -22,7 +23,7 @@ const Component = (props) => {
             </div>
             <div className="warpjs-filterable-list-results">
                 <FilteredList
-                    filterValue={props.filterValue}
+                    filterValue={props.filterableListValue}
                     filter={props.filter}
                     items={props.items}
                     listRender={props.listRender}
@@ -36,7 +37,8 @@ const Component = (props) => {
 Component.displayName = "FilterableList";
 
 Component.propTypes = {
-    filterValue: PropTypes.string,
+    filterableListValue: PropTypes.string,
+    filterableListChanged: PropTypes.func.isRequired,
     filter: PropTypes.func.isRequired,
     items: PropTypes.array.isRequired,
     listRender: PropTypes.func.isRequired,

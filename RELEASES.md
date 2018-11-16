@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.71 - 2018-11-15
+
+- Added BaseList, FilterableList, and FilteredList.
+
 ## 1.2.70 - 2018-11-14
 
 - Added `window.WarpJS.ReactComponents` for shared components.
