@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.72 - 2018-11-19
+
+- Fixed filtering element already selected.
+
 ## 1.2.71 - 2018-11-15
 
 - Added BaseList, FilterableList, and FilteredList.
