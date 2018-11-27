@@ -29,8 +29,7 @@ const Container = wrapContainer(Component, mapStateToProps, mapDispatchToProps, 
 
 Container.propTypes = {
     componentId: PropTypes.string.isRequired,
-    condition: PropTypes.func.isRequired,
-    items: PropTypes.array.isRequired,
+    componentRender: PropTypes.func.isRequired,
 };
 
-export default  Container;
+export default Container;
