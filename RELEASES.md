@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.73 - 2018-11-29
+
+- warp-works/warpjs#127: Refactored to allow custom rendering for
+  <FilterableList>.
+
 ## 1.2.72 - 2018-11-19
 
 - Fixed filtering element already selected.
