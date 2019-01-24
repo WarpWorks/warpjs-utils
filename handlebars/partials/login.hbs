@@ -5,26 +5,30 @@
   </div>
 {{else if _links.warpjsLogin.href}}
   <div class="pull-right warpjs-user-not-logged-in">
-    <button type="button" class="btn" data-warpjs-action="toggle-login-form">Login</button>
-    <form class="warpjs-login-form warpjs-hi-primary" method="POST" action="{{_links.warpjsLogin.href}}">
-      <div class="pull-right">
-        <button type="button" data-warpjs-action="toggle-login-form"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="warpjs-title">
-        Please log in
-      </div>
-      <div class="warpjs-login-input">
-        <input class="form-control" type="text" name="username" placeholder="username" required />
-      </div>
-      <div class="warpjs-login-input">
-        <input class="form-control" type="password" name="password" placeholder="password" required />
-      </div>
-      <div class="warpjs-login-button warpjs-login-button-login">
-        <button type="submit" class="btn" data-warpjs-action="log-in">Login</button>
-      </div>
-      <div class="warpjs-login-button warpjs-login-button-cancel">
-        <button type="button" class="btn" data-warpjs-action="toggle-login-form">Cancel</button>
-      </div>
-    </form>
+    {{#if warpjsFeatures.isCasSSO}}
+      <button type="button" class="btn"><a href="{{_links.warpjsLogin.href}}">Login</a></button>
+    {{else}}
+      <button type="button" class="btn" data-warpjs-action="toggle-login-form">Login</button>
+      <form class="warpjs-login-form warpjs-hi-primary" method="POST" action="{{_links.warpjsLogin.href}}">
+        <div class="pull-right">
+          <button type="button" data-warpjs-action="toggle-login-form"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="warpjs-title">
+          Please log in
+        </div>
+        <div class="warpjs-login-input">
+          <input class="form-control" type="text" name="username" placeholder="username" required />
+        </div>
+        <div class="warpjs-login-input">
+          <input class="form-control" type="password" name="password" placeholder="password" required />
+        </div>
+        <div class="warpjs-login-button warpjs-login-button-login">
+          <button type="submit" class="btn" data-warpjs-action="log-in">Login</button>
+        </div>
+        <div class="warpjs-login-button warpjs-login-button-cancel">
+          <button type="button" class="btn" data-warpjs-action="toggle-login-form">Cancel</button>
+        </div>
+      </form>
+    {{/if}}
   </div>
 {{/if}}

@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.74 - 2019-01-24
+
+- WarpWorks/warpjs-session-plugin#5: Added CAS SSO.
+
 ## 1.2.73 - 2018-11-29
 
 - warp-works/warpjs#127: Refactored to allow custom rendering for
