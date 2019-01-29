@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.75 - 2019-01-25
+
+- Removed console.log().
+
 ## 1.2.74 - 2019-01-24
 
 - WarpWorks/warpjs-session-plugin#5: Added CAS SSO.
