@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-xs-3 logo-container">
+  <div class="logo-container">
     {{#if _links.warpjsLogo.href}}
         {{#if _links.warpjsHomepage.href}}
           <a href="{{_links.warpjsHomepage.href}}"><img class="logo"
@@ -11,7 +11,7 @@
     {{/if}}
   </div>
 
-  <div class="col-xs-9 header-items">
+  <div class="header-items">
     <div class="header-items-cell">
       {{#each _embedded.headerItems as |headerItem|}}
         <span class="header-item">

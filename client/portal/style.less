@@ -96,6 +96,9 @@ a {
     }
 
     .logo-container {
+        width: 305px;
+        float: left;
+
         img {
             &.logo {
                 max-height: @page-header-height;
@@ -105,7 +108,9 @@ a {
     }
 
     .header-items {
+        width: calc(~"100% - 305px");
         display: table;
+        float: left;
 
         > .header-items-cell {
             display: table-cell;
