@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.77 - 2019-02-07
+
+- Login button fix for FF.
+
 ## 1.2.76 - 2019-02-07
 
 - Changed logo and footer.

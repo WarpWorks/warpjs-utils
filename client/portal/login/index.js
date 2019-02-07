@@ -12,6 +12,10 @@ module.exports = ($) => {
         $('.warpjs-user-not-logged-in').toggleClass('show-login-form');
     });
 
+    $(document).on('click', '[data-warpjs-action="cas-sso"]', (e) => {
+        window.location.href = $(e.target).data('warpjsUrl');
+    });
+
     $(document).on('submit', 'form.warpjs-login-form[method][action]', function(e) {
         e.preventDefault();
 
