@@ -1,6 +1,6 @@
 {{#if warpjsUser}}
   <div class="pull-right warpjs-user-logged-in">
-    Hi {{warpjsUser.Name}}
+    Hi <a title="Your profile" href="{{_links.userProfile.href}}">{{warpjsUser.Name}}</a>
     <a href="{{_links.warpjsLogout.href}}"><span title="Log out" class="glyphicon glyphicon-log-out"></span></a>
   </div>
 {{else if _links.warpjsLogin.href}}

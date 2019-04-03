@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.78 - 2019-04-03
+
+- Add a link to the current user's profile page.
+
 ## 1.2.77 - 2019-02-07
 
 - Login button fix for FF.
