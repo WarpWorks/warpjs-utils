@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.79 - 2019-04-04
+
+- Refactored to put common code for send-hal(), send-index(), and
+  send-portal-index().
+
 ## 1.2.78 - 2019-04-03
 
 - Add a link to the current user's profile page.
