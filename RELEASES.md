@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.80 - 2019-04-06
+
+- Fixed sorting issue because relnPosition=null.
+
 ## 1.2.79 - 2019-04-04
 
 - Refactored to put common code for send-hal(), send-index(), and
