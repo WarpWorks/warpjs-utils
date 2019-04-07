@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.81 - 2019-04-06
+
+- Handling weird case where relnPosition=''.
+
 ## 1.2.80 - 2019-04-06
 
 - Fixed sorting issue because relnPosition=null.
