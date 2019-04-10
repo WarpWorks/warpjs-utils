@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.83 - 2019-04-10
+
+- #5: Adding initial spinner in portal.
+
 ## 1.2.82 - 2019-04-09
 
 - Updating to bootstrap 3.4.1
