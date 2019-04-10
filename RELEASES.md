@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.82 - 2019-04-09
+
+- Updating to bootstrap 3.4.1
+
 ## 1.2.81 - 2019-04-06
 
 - Handling weird case where relnPosition=''.
