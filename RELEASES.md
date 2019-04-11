@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.84 - 2019-04-11
+
+- Revert to Bootstrap 3.3.7 to fix tooltip buttons.
+
 ## 1.2.83 - 2019-04-10
 
 - #5: Adding initial spinner in portal.
