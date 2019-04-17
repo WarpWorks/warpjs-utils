@@ -27,7 +27,7 @@ export default (Component) => {
 
         render() {
             if (this.state.hasError) {
-                return <h1>Something went wrong.</h1>;
+                return <h1 style="color: red">*** REACT ERROR: Something went wrong. ***</h1>;
             }
 
             return <Component {...this.props} />;

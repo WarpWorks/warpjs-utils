@@ -11,6 +11,7 @@ const rootDir = path.dirname(require.resolve('./../../package.json'));
 module.exports = Object.freeze({
     build: {
         target: 'web',
+        devtool: 'source-map',
         entry: {
             [constants.entryPoints.portal]: './client/portal/index.js',
             [constants.entryPoints.content]: './client/content/index.js',
@@ -46,6 +47,7 @@ module.exports = Object.freeze({
 
             new webpack.optimize.UglifyJsPlugin({
                 compress: false,
+                sourceMap: true,
                 output: {
                     ascii_only: true
                 }

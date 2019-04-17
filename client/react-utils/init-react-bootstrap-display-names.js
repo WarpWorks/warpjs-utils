@@ -23,6 +23,7 @@ export default () => {
         'HelpBlock',
         'ListGroup',
         'ListGroupItem',
+        'Modal',
         'Row'
     ].forEach((componentName) => setDisplayName(ReactBootstrap, componentName));
 };

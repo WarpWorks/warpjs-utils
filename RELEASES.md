@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.85 - 2019-04-17
+
+- Adding ModalContainer React component.
+
 ## 1.2.84 - 2019-04-11
 
 - Revert to Bootstrap 3.3.7 to fix tooltip buttons.
