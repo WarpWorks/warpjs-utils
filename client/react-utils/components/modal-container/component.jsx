@@ -10,7 +10,7 @@ const Component = (props) => {
     ;
 
     return (
-        <Modal bsSize="large" show={props.show} onHide={props.onHide}>
+        <Modal bsSize="large" className={props.className} show={props.show} onHide={props.onHide}>
             <Modal.Header closeButton>
                 {title}
             </Modal.Header>
@@ -28,6 +28,7 @@ Component.propTypes = {
     onHide: PropTypes.func,
     show: PropTypes.bool,
     title: PropTypes.string,
+    className: PropTypes.string
 };
 
 export default errorBoundary(Component);

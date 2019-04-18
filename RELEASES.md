@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.88 - 2019-04-18
+
+- Pass `className` down to the modal container.
+
 ## 1.2.87 - 2019-04-18
 
 - Fixed `style="string"` to use `className="text-danger"`.
