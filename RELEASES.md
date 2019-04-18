@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.87 - 2019-04-18
+
+- Fixed `style="string"` to use `className="text-danger"`.
+
 ## 1.2.86 - 2019-04-18
 
 - Fixing CSS for spinner to be able to include it in a modal.
