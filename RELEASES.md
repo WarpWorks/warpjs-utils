@@ -1,5 +1,11 @@
 # WarpJS-utils Releases
 
+## 1.2.89 - 2019-04-18
+
+- Added most (if not all) `displayName` for `react-bootstrap` components.
+- Added placeholder for modal footer.
+- Using flex for modal.
+
 ## 1.2.88 - 2019-04-18
 
 - Pass `className` down to the modal container.
