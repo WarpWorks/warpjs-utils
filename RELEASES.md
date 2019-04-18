@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.86 - 2019-04-18
+
+- Fixing CSS for spinner to be able to include it in a modal.
+
 ## 1.2.85 - 2019-04-17
 
 - Adding ModalContainer React component.
