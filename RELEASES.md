@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.90 - 2019-04-19
+
+- Added namespace substate getter and setter.
+
 ## 1.2.89 - 2019-04-18
 
 - Added most (if not all) `displayName` for `react-bootstrap` components.
