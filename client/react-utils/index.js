@@ -11,3 +11,4 @@ export { default as namespaceKeys } from './namespace-keys';
 export { default as selector } from './selector';
 export { default as setNamespaceSubstate } from './set-namespace-substate';
 export { default as wrapContainer } from './wrap-container';
+export { INIT_TYPE } from './constants';

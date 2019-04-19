@@ -2,6 +2,8 @@ import clone from 'lodash/clone';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { createLogger } from 'redux-logger';
 
+import { INIT_TYPE } from './constants';
+
 // import debug from 'debug';
 // const log = debug('W2:utils:react-utils/create-store');
 
@@ -17,5 +19,7 @@ export default (reducers, initialState = {}, middlewares = [], inDevelopment = f
         }
     }
 
-    return createStore(reducers, initialState, composeEnhanders(applyMiddleware(...clonedMiddlewares)));
+    const store = createStore(reducers, initialState, composeEnhanders(applyMiddleware(...clonedMiddlewares)));
+    store.dispatch({ type: INIT_TYPE });
+    return store;
 };

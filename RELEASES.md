@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.91 - 2019-04-19
+
+- Adding store init action dispatch.
+
 ## 1.2.90 - 2019-04-19
 
 - Added namespace substate getter and setter.
