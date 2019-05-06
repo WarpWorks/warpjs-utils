@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.92 - 2019-05-06
+
+- Also copy `defaultProps`.
+
 ## 1.2.91 - 2019-04-19
 
 - Adding store init action dispatch.
