@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.93 - 2019-05-10
+
+- Calling passed in `onHide()` when modal is closed.
+
 ## 1.2.92 - 2019-05-06
 
 - Also copy `defaultProps`.
