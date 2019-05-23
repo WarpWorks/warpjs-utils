@@ -11,6 +11,7 @@ const docLevel = require('./lib/doc-level');
 const documentReady = require('./lib/document-ready');
 const expandUrlTemplate = require('./lib/expand-url-template');
 const flattenHAL = require('./lib/flatten-hal');
+const fullUrl = require('./lib/full-url');
 const getCurrentPageHAL = require('./lib/get-current-page-hal');
 const getHandlebarsHelpersDir = require('./lib/get-handlebars-helpers-dir');
 const getHandlebarsPartialsDir = require('./lib/get-handlebars-partials-dir');
@@ -48,13 +49,14 @@ module.exports = {
     compareIDs: (id1, id2) => compareIDs(id1, id2),
     configureHandlebarsApp: (app) => configureHandlebarsApp(app),
     constants,
-    createResource: (reqOrPath, data) => createResource(reqOrPath, data),
+    createResource: (reqOrPath, data, req) => createResource(reqOrPath, data, req),
 
     /** @deprecated */
     docLevel,
     documentReady: ($) => documentReady($),
     expandUrlTemplate: (templated, data) => expandUrlTemplate(templated, data),
     flattenHAL: (hal) => flattenHAL(hal),
+    fullUrl: (req, newPath) => fullUrl(req, newPath),
     getCurrentPageHAL: ($, url) => getCurrentPageHAL($, url),
     getHandlebarsHelpersDir: () => getHandlebarsHelpersDir(),
     getHandlebarsPartialsDir: () => getHandlebarsPartialsDir(),

@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.94 - 2019-05-23
+
+- Adding option to generate full URI instead of just a pathname for
+  `createResource()`. Added `fullUrl()`.
+
 ## 1.2.93 - 2019-05-10
 
 - Calling passed in `onHide()` when modal is closed.
