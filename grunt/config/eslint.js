@@ -1,7 +1,10 @@
 module.exports = {
     options: {
         fix: true,
-        useEslintrc: false
+        useEslintrc: false,
+        parserOptions: {
+            ecmaVersion: 8
+        }
     },
     node: {
         options: {
@@ -40,6 +43,7 @@ module.exports = {
         options: {
             parserOptions: {
                 ecmaFeatures: {
+                    experimentalObjectRestSpread: true,
                     jsx: true
                 }
             },
@@ -49,7 +53,15 @@ module.exports = {
                     '@quoin/eslint-config-quoin/client',
                     'eslint:recommended',
                     'plugin:react/recommended'
-                ]
+                ],
+                plugins: [
+                    "react"
+                ],
+                settings: {
+                    react: {
+                        version: "detect"
+                    }
+                }
             },
             envs: [
                 'jquery',

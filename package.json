@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.94",
+  "version": "1.2.95",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "engineStrict": true,
@@ -34,7 +34,7 @@
     "@warp-works/warpjs-plugins": ">=1.2.5"
   },
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "latest",
+    "@quoin/eslint-config-quoin": "~0.3.1",
     "@quoin/node-test-helpers": "latest",
     "@warp-works/warpjs-plugins": "latest",
     "babel-core": "~6.26.3",
@@ -49,7 +49,7 @@
     "eslint": "~5.16.0",
     "eslint-config-standard": "~12.0.0",
     "eslint-plugin-html": "~5.0.5",
-    "eslint-plugin-import": "~2.17.2",
+    "eslint-plugin-import": "~2.17.3",
     "eslint-plugin-json": "~1.4.0",
     "eslint-plugin-node": "~9.1.0",
     "eslint-plugin-promise": "~4.1.1",
@@ -61,7 +61,7 @@
     "grunt-contrib-clean": "2.0.x",
     "grunt-contrib-copy": "1.0.x",
     "grunt-contrib-less": "2.0.x",
-    "grunt-eslint": "21.0.x",
+    "grunt-eslint": "~21.1.0",
     "grunt-webpack": "3.1.x",
     "handlebars-loader": "~1.7.0",
     "jit-grunt": "0.10.x",
@@ -86,7 +86,8 @@
   "dependencies": {
     "@quoin/node-rc": "~0.1.1",
     "@warp-works/warpjs-filter-box": "~1.0.0",
-    "bluebird": "3.5.x",
+    "bluebird": "~3.5.5",
+    "classnames": "~2.2.6",
     "debug": "~4.1.1",
     "hal": "0.1.x",
     "handlebars": "~4.1.1",

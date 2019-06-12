@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 import { Modal } from 'react-bootstrap';
 
+import Button from './../button';
 import errorBoundary from './../../error-boundary';
+import * as SHAPES from './../shapes';
+
+const buttons = (buttonInfos) => buttonInfos.map((buttonInfo, index) => <Button key={index} {...buttonInfo} />);
 
 const Component = (props) => {
     const title = props.title
@@ -15,7 +19,7 @@ const Component = (props) => {
     ;
 
     const footer = props.footerButtons && props.footerButtons.length
-        ? <Modal.Footer>TODO: Modal.Footer</Modal.Footer>
+        ? <Modal.Footer>{buttons(props.footerButtons)}</Modal.Footer>
         : null
     ;
 
@@ -37,11 +41,16 @@ Component.displayName = 'ModalContainer';
 Component.propTypes = {
     children: PropTypes.element,
     className: PropTypes.string,
-    footerButtons: PropTypes.array,
+    footerButtons: PropTypes.arrayOf(SHAPES.BUTTON),
     id: PropTypes.string.isRequired,
     onHide: PropTypes.func,
     show: PropTypes.bool,
+    size: PropTypes.oneOf(['lg', 'large', 'sm', 'small']),
     title: PropTypes.string,
+};
+
+Component.defaultProps = {
+    size: 'large'
 };
 
 export default errorBoundary(Component);

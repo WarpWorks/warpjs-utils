@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.95 - 2019-06-12
+
+- Handling footer in ModalContainer.
+
 ## 1.2.94 - 2019-05-23
 
 - Adding option to generate full URI instead of just a pathname for

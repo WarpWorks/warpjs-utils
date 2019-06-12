@@ -1,4 +1,4 @@
 export { default } from './container';
 
-export { show } from './orchestrators';
+export { hide, show } from './orchestrators';
 export { default as reducers } from './reducers';
