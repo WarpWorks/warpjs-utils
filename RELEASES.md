@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.96 - 2019-06-13
+
+- Exporting `Button` component.
+
 ## 1.2.95 - 2019-06-12
 
 - Handling footer in ModalContainer.
