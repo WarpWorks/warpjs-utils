@@ -46,8 +46,8 @@ describe("index", () => {
             ['sendError', 4],
             ['sendErrorHal', 6],
             ['sendHal', 5],
-            ['sendIndex', 6],
-            ['sendPortalIndex', 6],
+            ['sendIndex', 8],
+            ['sendPortalIndex', 7],
             ['trace', 5],
             ['urlFormat', 2],
             ['wrapWith406', 2]

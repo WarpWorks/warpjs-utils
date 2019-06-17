@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.97 - 2019-06-17
+
+- Adding meta params to add SEO information.
+
 ## 1.2.96 - 2019-06-13
 
 - Exporting `Button` component.
