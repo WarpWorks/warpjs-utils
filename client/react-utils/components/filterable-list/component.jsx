@@ -26,8 +26,7 @@ Component.displayName = "FilterableList";
 Component.propTypes = {
     filterableListValue: PropTypes.string,
     filterableListChanged: PropTypes.func.isRequired,
-    componentRender: PropTypes.func.isRequired,
+    componentRender: PropTypes.func.isRequired
 };
 
 export default errorBoundary(Component);
-

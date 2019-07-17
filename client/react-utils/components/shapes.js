@@ -10,7 +10,7 @@ export const BUTTON = PropTypes.shape({
         'info',
         'warning',
         'danger',
-        'link',
+        'link'
     ]),
-    onClick: PropTypes.func,
+    onClick: PropTypes.func
 });

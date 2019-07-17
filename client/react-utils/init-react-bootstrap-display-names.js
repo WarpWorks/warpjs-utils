@@ -156,5 +156,4 @@ export default () => {
 
     ReactBootstrap.ToggleButtonGroup.Button.displayName = 'ReactBootstrap.ToggleButtonGroup.Button';
     ReactBootstrap.ToggleButtonGroup.ControlledComponent.displayName = 'ReactBootstrap.ToggleButtonGroup.ControlledComponent';
-
 };

@@ -21,15 +21,14 @@ const mapDispatchToProps = (dispatch, ownProps) => Object.freeze({
 const mergeProps = (stateProps, dispatchProps, ownProps) => Object.freeze({
     ...stateProps,
     ...dispatchProps,
-    ...omit(ownProps, ['onHide'])
+    ...omit(ownProps, [ 'onHide' ])
 });
 
 const Container = wrapContainer(Component, mapStateToProps, mapDispatchToProps, mergeProps);
 
 Container.propTypes = {
     id: PropTypes.string.isRequired,
-    onHide: PropTypes.func,
+    onHide: PropTypes.func
 };
-
 
 export default Container;

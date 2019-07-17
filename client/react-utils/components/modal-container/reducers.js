@@ -32,5 +32,5 @@ const hide = (state = {}, action) => {
 
 export default concatenateReducers([
     { actions: [ actions.SHOW ], reducer: show },
-    { actions: [ actions.HIDE ], reducer: hide },
+    { actions: [ actions.HIDE ], reducer: hide }
 ]);

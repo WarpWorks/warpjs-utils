@@ -31,7 +31,7 @@ module.exports = ($) => {
             toast.warning($, "Missing password.");
             findInput($, this, 'password').focus();
         } else {
-            const  url = $(this).attr('action');
+            const url = $(this).attr('action');
 
             return Promise.resolve()
                 .then(() => proxy.post($, url, data))

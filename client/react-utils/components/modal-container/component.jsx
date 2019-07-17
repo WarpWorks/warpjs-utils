@@ -26,7 +26,7 @@ const Component = (props) => {
     return (
         <Modal bsSize="large" className={`${props.className} warpjs-react-modal`} show={props.show} onHide={props.onHide}
             data-warpjs-modal={props.id}
-            >
+        >
             {header}
             <Modal.Body>
                 {props.children}
@@ -45,8 +45,8 @@ Component.propTypes = {
     id: PropTypes.string.isRequired,
     onHide: PropTypes.func,
     show: PropTypes.bool,
-    size: PropTypes.oneOf(['lg', 'large', 'sm', 'small']),
-    title: PropTypes.string,
+    size: PropTypes.oneOf([ 'lg', 'large', 'sm', 'small' ]),
+    title: PropTypes.string
 };
 
 Component.defaultProps = {

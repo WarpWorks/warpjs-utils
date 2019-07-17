@@ -22,6 +22,6 @@ describe("handlebars/helpers/isArrayLengthGreater", () => {
     });
 
     it("should be true for non-empty list and 0", () => {
-        expect(moduleToTest([1], 0)).to.be.true();
+        expect(moduleToTest([ 1 ], 0)).to.be.true();
     });
 });

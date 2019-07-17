@@ -28,29 +28,29 @@ describe("index", () => {
 
         // Functions
         [
-            ['byName', 2],
-            ['byPositionThenName', 2],
-            ['compareIDs', 2],
-            ['configureHandlebarsApp', 1],
-            ['createResource', 3],
-            ['documentReady', 1],
-            ['expandUrlTemplate', 2],
-            ['flattenHAL', 1],
-            ['fullUrl', 2],
-            ['getCurrentPageHAL', 2],
-            ['getHandlebarsHelpersDir', 0],
-            ['getHandlebarsPartialsDir', 0],
-            ['getHandlebarsViewsDir', 0],
-            ['getInitialData', 1],
-            ['requirePartial', 1],
-            ['sendError', 4],
-            ['sendErrorHal', 6],
-            ['sendHal', 5],
-            ['sendIndex', 8],
-            ['sendPortalIndex', 7],
-            ['trace', 5],
-            ['urlFormat', 2],
-            ['wrapWith406', 2]
+            [ 'byName', 2 ],
+            [ 'byPositionThenName', 2 ],
+            [ 'compareIDs', 2 ],
+            [ 'configureHandlebarsApp', 1 ],
+            [ 'createResource', 3 ],
+            [ 'documentReady', 1 ],
+            [ 'expandUrlTemplate', 2 ],
+            [ 'flattenHAL', 1 ],
+            [ 'fullUrl', 2 ],
+            [ 'getCurrentPageHAL', 2 ],
+            [ 'getHandlebarsHelpersDir', 0 ],
+            [ 'getHandlebarsPartialsDir', 0 ],
+            [ 'getHandlebarsViewsDir', 0 ],
+            [ 'getInitialData', 1 ],
+            [ 'requirePartial', 1 ],
+            [ 'sendError', 4 ],
+            [ 'sendErrorHal', 6 ],
+            [ 'sendHal', 5 ],
+            [ 'sendIndex', 8 ],
+            [ 'sendPortalIndex', 7 ],
+            [ 'trace', 5 ],
+            [ 'urlFormat', 2 ],
+            [ 'wrapWith406', 2 ]
         ].forEach((info) => it(`should expose function '${info[0]}' with ${info[1]} param(s)`, () => {
             expect(moduleToTest).to.have.property(info[0]);
             expect(moduleToTest[info[0]]).to.be.a('function').and.have.lengthOf(info[1]);
@@ -59,15 +59,15 @@ describe("index", () => {
 
         // Other basic types.
         [
-            ['assetsFolder', 'string'],
-            ['stylePath', 'string'],
-            ['cache', 'object'],
-            ['constants', 'object'],
-            ['docLevel', 'object'],
-            ['output', 'object'],
-            ['proxy', 'object'],
-            ['server', 'object'],
-            ['toast', 'object']
+            [ 'assetsFolder', 'string' ],
+            [ 'stylePath', 'string' ],
+            [ 'cache', 'object' ],
+            [ 'constants', 'object' ],
+            [ 'docLevel', 'object' ],
+            [ 'output', 'object' ],
+            [ 'proxy', 'object' ],
+            [ 'server', 'object' ],
+            [ 'toast', 'object' ]
         ].forEach((info) => it(`should expose ${info[1]} '${info[0]}'`, () => {
             expect(moduleToTest).to.have.property(info[0]);
             expect(moduleToTest[info[0]]).to.be.a(info[1]);

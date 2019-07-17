@@ -22,14 +22,14 @@ const mapDispatchToProps = (dispatch, ownProps) => Object.freeze({
 const mergeProps = (stateProps, dispatchProps, ownProps) => Object.freeze({
     ...stateProps,
     ...dispatchProps,
-    ...omit(ownProps, ['filterableListValue', 'filterableListChanged'])
+    ...omit(ownProps, [ 'filterableListValue', 'filterableListChanged' ])
 });
 
 const Container = wrapContainer(Component, mapStateToProps, mapDispatchToProps, mergeProps);
 
 Container.propTypes = {
     componentId: PropTypes.string.isRequired,
-    componentRender: PropTypes.func.isRequired,
+    componentRender: PropTypes.func.isRequired
 };
 
 export default Container;

@@ -13,5 +13,5 @@ const updateValue = (state = {}, action) => {
 };
 
 export default concatenateReducers([
-    { actions: [actions.UPDATE_VALUE], reducer: updateValue }
+    { actions: [ actions.UPDATE_VALUE ], reducer: updateValue }
 ]);
