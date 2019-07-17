@@ -15,7 +15,9 @@
     <div class="header-items-cell">
       {{#each _embedded.headerItems as |headerItem|}}
         <span class="header-item">
-          {{#if headerItem._links.self.href}}
+          {{#if headerItem.isCurrentPage}}
+            <span class="current-page">{{headerItem.label}}</span>
+          {{else if headerItem._links.self.href}}
             <a href="{{headerItem._links.self.href}}">{{headerItem.label}}</a>
           {{else}}
             {{headerItem.label}}

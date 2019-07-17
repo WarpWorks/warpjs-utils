@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.98 - 2019-07-17
+
+- WarpWorks/warpjs#264: Current page header item in bold and not clickable.
+
 ## 1.2.97 - 2019-06-17
 
 - Adding meta params to add SEO information.
