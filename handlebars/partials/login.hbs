@@ -6,9 +6,9 @@
 {{else if _links.warpjsLogin.href}}
   <div class="pull-right warpjs-user-not-logged-in">
     {{#if warpjsFeatures.isCasSSO}}
-      <button type="button" class="btn" data-warpjs-action="cas-sso" data-warpjs-url="{{_links.warpjsLogin.href}}">Login</button>
+      <button type="button" class="btn warpjs-login-button" data-warpjs-action="cas-sso" data-warpjs-url="{{_links.warpjsLogin.href}}">Login</button>
     {{else}}
-      <button type="button" class="btn" data-warpjs-action="toggle-login-form">Login</button>
+      <button type="button" class="btn warpjs-login-button" data-warpjs-action="toggle-login-form">Login</button>
       <form class="warpjs-login-form warpjs-hi-primary" method="POST" action="{{_links.warpjsLogin.href}}">
         <div class="pull-right">
           <button type="button" data-warpjs-action="toggle-login-form"><span aria-hidden="true">&times;</span></button>

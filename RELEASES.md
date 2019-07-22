@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.99 - 2019-07-22
+
+- WarpWorks/warpjs#245: Fixing login with SSO.
+
 ## 1.2.98 - 2019-07-17
 
 - WarpWorks/warpjs#264: Current page header item in bold and not clickable.
