@@ -1,4 +1,5 @@
 export { default as actionCreator } from './action-creator';
+export { default as baseAttributeReducer } from './base-attribute-reducer';
 export { default as baseComponentName } from './base-component-name';
 export { default as concatenateReducers } from './concatenate-reducers';
 export { default as createStore } from './create-store';

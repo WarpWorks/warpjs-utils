@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.100 - 2019-08-13
+
+- Adding base-attribute-reducer and button disabled.
+
 ## 1.2.99 - 2019-07-22
 
 - WarpWorks/warpjs#245: Fixing login with SSO.

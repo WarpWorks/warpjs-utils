@@ -13,7 +13,7 @@ const Component = (props) => {
 
     const glyph = props.glyph ? <Glyphicon glyph={props.glyph} className="warpjs-button-glyph" /> : null;
 
-    return <Button bsStyle={props.style} onClick={props.onClick} className={classes}>{glyph}{props.label || null}</Button>;
+    return <Button bsStyle={props.style} onClick={props.onClick} className={classes} disabled={props.disabled}>{glyph}{props.label || null}</Button>;
 };
 
 Component.displayName = 'WarpjsButton';
@@ -21,6 +21,7 @@ Component.displayName = 'WarpjsButton';
 Component.propTypes = SHAPES.BUTTON;
 
 Component.defaultProps = {
+    disabled: false,
     style: 'primary'
 };
 
