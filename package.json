@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.100",
+  "version": "1.2.101",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "engineStrict": true,
@@ -95,6 +95,7 @@
     "hbs-utils": "0.0.x",
     "lodash": "~4.17.15",
     "moment": "~2.24.0",
+    "semver": "~6.3.0",
     "url-template": "~2.0.8"
   }
 }

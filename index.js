@@ -2,6 +2,7 @@ const path = require('path');
 
 const byName = require('./lib/by-name');
 const byPositionThenName = require('./lib/by-position-then-name');
+const byStatusThenVersion = require('./lib/by-status-then-version');
 const cache = require('./lib/cache');
 const compareIDs = require('./lib/compare-ids');
 const configureHandlebarsApp = require('./handlebars/configure');
@@ -45,6 +46,7 @@ module.exports = {
 
     byName: (left, right) => byName(left, right),
     byPositionThenName: (left, right) => byPositionThenName(left, right),
+    byStatusThenVersion: (left, right) => byStatusThenVersion(left, right),
     cache,
     compareIDs: (id1, id2) => compareIDs(id1, id2),
     configureHandlebarsApp: (app) => configureHandlebarsApp(app),

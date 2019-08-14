@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.101 - 2019-08-14
+
+- Refactored `byStatusThenVersion()` from `warpjs` to here.
+
 ## 1.2.100 - 2019-08-13
 
 - Adding base-attribute-reducer and button disabled.
