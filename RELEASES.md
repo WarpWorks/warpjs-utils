@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.102 - 2019-09-10
+
+- Added common CSS to edition.
+
 ## 1.2.101 - 2019-08-14
 
 - Refactored `byStatusThenVersion()` from `warpjs` to here.
