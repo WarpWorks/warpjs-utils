@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.103 - 2019-09-20
+
+- Adding base-namespace-reducer.
+
 ## 1.2.102 - 2019-09-10
 
 - Added common CSS to edition.
