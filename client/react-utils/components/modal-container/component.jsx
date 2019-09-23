@@ -1,11 +1,34 @@
+import isArray from 'lodash/isArray';
 import PropTypes from 'prop-types';
-import { Modal } from 'react-bootstrap';
+import { MenuItem, Modal, SplitButton } from 'react-bootstrap';
 
 import Button from './../button';
 import errorBoundary from './../../error-boundary';
 import * as SHAPES from './../shapes';
 
-const buttons = (buttonInfos) => buttonInfos.map((buttonInfo, index) => <Button key={index} {...buttonInfo} />);
+// import _debug from './debug'; const debug = _debug('component');
+
+const buttons = (buttonInfos) => buttonInfos.map((buttonInfo, index) => {
+    if (isArray(buttonInfo)) {
+        if (buttonInfo.length === 1) {
+            return <Button key={index} {...buttonInfo[0]} />;
+        } else {
+            const first = buttonInfo[0];
+
+            const menuItems = buttonInfo.filter((menuItem, index) => index).map((menuItem, index) => (
+                <MenuItem key={index} onClick={menuItem.onClick}>{menuItem.label}</MenuItem>
+            ));
+
+            return (
+                <SplitButton key={index} bsStyle={first.style} title={first.label} onClick={first.onClick} dropup pullRight>
+                    {menuItems}
+                </SplitButton>
+            );
+        }
+    } else {
+        return <Button key={index} {...buttonInfo} />;
+    }
+});
 
 const Component = (props) => {
     const title = props.title
