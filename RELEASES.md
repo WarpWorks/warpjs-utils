@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.105 - 2019-09-25
+
+- Fixing button radius for footer buttons in modal.
+
 ## 1.2.104 - 2019-09-23
 
 - Allow modal to have SplitButtons.
