@@ -1,4 +1,5 @@
+import { orchestrators } from './flux';
 export { default } from './container';
+export { reducers } from './flux';
 
-export { hide, show } from './orchestrators';
-export { default as reducers } from './reducers';
+export const { hide, show } = orchestrators;

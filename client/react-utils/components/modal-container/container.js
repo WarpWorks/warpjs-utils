@@ -3,7 +3,7 @@ import omit from 'lodash/omit';
 import PropTypes from 'prop-types';
 
 import Component from './component';
-import * as orchestrators from './orchestrators';
+import { orchestrators } from './flux';
 import namespace from './namespace';
 import wrapContainer from './../../wrap-container';
 
