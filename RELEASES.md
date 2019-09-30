@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.106 - 2019-09-30
+
+- Adding Tooltip to `<Button title=>`.
+
 ## 1.2.105 - 2019-09-25
 
 - Fixing button radius for footer buttons in modal.

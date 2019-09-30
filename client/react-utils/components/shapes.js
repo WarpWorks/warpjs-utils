@@ -13,5 +13,11 @@ export const BUTTON = PropTypes.shape({
         'danger',
         'link'
     ]),
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    size: PropTypes.oneOf([
+        'lg',
+        'sm',
+        'xs'
+    ]),
+    title: PropTypes.string
 });
