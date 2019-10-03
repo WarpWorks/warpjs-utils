@@ -4,7 +4,7 @@ import { MenuItem, Modal, SplitButton } from 'react-bootstrap';
 
 import Button from './../button';
 import errorBoundary from './../../error-boundary';
-import * as SHAPES from './../shapes';
+import { BUTTON as BUTTON_SHAPE } from './../shapes';
 
 // import _debug from './debug'; const debug = _debug('component');
 
@@ -64,7 +64,7 @@ Component.displayName = 'ModalContainer';
 Component.propTypes = {
     children: PropTypes.element,
     className: PropTypes.string,
-    footerButtons: PropTypes.arrayOf(SHAPES.BUTTON),
+    footerButtons: PropTypes.arrayOf(BUTTON_SHAPE),
     id: PropTypes.string.isRequired,
     onHide: PropTypes.func,
     show: PropTypes.bool,

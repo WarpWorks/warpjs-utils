@@ -2,7 +2,7 @@ import classnames from 'classnames';
 import { Button, Glyphicon, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import errorBoundary from './../error-boundary';
-import * as SHAPES from './shapes';
+import { BUTTON as BUTTON_SHAPE } from './shapes';
 
 const Component = (props) => {
     const classes = classnames({
@@ -23,7 +23,7 @@ const Component = (props) => {
 
 Component.displayName = 'WarpjsButton';
 
-Component.propTypes = SHAPES.BUTTON;
+Component.propTypes = BUTTON_SHAPE;
 
 Component.defaultProps = {
     disabled: false,

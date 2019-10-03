@@ -1,4 +1,5 @@
 export { default as reducers } from './reducers';
+export { default as ActionIcon } from './action-icon';
 export { default as AutoSaveField } from './auto-save-field';
 export { default as BaseList } from './base-list';
 export { default as Button } from './button';
@@ -7,3 +8,4 @@ export { default as FilteredList } from './filtered-list';
 export { default as ModalContainer } from './modal-container';
 export { hide as hideModalContainer, show as showModalContainer } from './modal-container';
 export { default as Spinner } from './spinner';
+export { default as Tooltip } from './tooltip';

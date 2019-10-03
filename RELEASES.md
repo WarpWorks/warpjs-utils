@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.107 - 2019-10-03
+
+- Adding `<ActionIcon>` and `<Tooltip>`.
+
 ## 1.2.106 - 2019-09-30
 
 - Adding Tooltip to `<Button title=>`.
