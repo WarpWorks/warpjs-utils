@@ -10,7 +10,8 @@ import Tooltip from './tooltip';
 const Component = (props) => {
     const classNames = classnames({
         'warpjs-action-icon': true,
-        'warpjs-clickable': Boolean(props.onClick || props.onConfirm)
+        'warpjs-clickable': Boolean(props.onClick || props.onConfirm),
+        [`text-${props.style}`]: Boolean(props.style)
     });
 
     let C = <Glyphicon className={classNames} glyph={props.glyph} />;
@@ -34,6 +35,14 @@ Component.propTypes = {
     confirm: PropTypes.func,
     glyph: PropTypes.string.isRequired,
     onClick: PropTypes.func,
+    style: PropTypes.oneOf([
+        'muted',
+        'primary',
+        'success',
+        'info',
+        'warning',
+        'danger'
+    ]),
     title: PropTypes.string
 };
 

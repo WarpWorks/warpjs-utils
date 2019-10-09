@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.108 - 2019-10-07
+
+- Adding `style` to `<ActionIcon>`.
+
 ## 1.2.107 - 2019-10-03
 
 - Adding `<ActionIcon>` and `<Tooltip>`.
