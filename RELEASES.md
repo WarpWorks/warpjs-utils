@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.109 - 2019-10-18
+
+- Minor CSS to add margin-top to forms in modal.
+
 ## 1.2.108 - 2019-10-07
 
 - Adding `style` to `<ActionIcon>`.
