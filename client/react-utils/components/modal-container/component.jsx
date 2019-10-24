@@ -2,6 +2,7 @@ import isArray from 'lodash/isArray';
 import PropTypes from 'prop-types';
 import { MenuItem, Modal, SplitButton } from 'react-bootstrap';
 
+import ActionIcon from './../action-icon';
 import Button from './../button';
 import errorBoundary from './../../error-boundary';
 import { BUTTON as BUTTON_SHAPE } from './../shapes';
@@ -31,8 +32,13 @@ const buttons = (buttonInfos) => buttonInfos.map((buttonInfo, index) => {
 });
 
 const Component = (props) => {
+    const isDirtyIndicator = props.isDirty
+        ? <sup><ActionIcon size="small" glyph="pencil" style="warning" title="Page reload required" /></sup>
+        : null
+    ;
+
     const title = props.title
-        ? <Modal.Title>{props.title}</Modal.Title>
+        ? <Modal.Title>{isDirtyIndicator}{props.title}</Modal.Title>
         : null
     ;
 
@@ -66,6 +72,7 @@ Component.propTypes = {
     className: PropTypes.string,
     footerButtons: PropTypes.arrayOf(BUTTON_SHAPE),
     id: PropTypes.string.isRequired,
+    isDirty: PropTypes.bool.isRequired,
     onHide: PropTypes.func,
     show: PropTypes.bool,
     size: PropTypes.oneOf([ 'lg', 'large', 'sm', 'small' ]),
@@ -73,6 +80,7 @@ Component.propTypes = {
 };
 
 Component.defaultProps = {
+    isDirty: false,
     size: 'large'
 };
 

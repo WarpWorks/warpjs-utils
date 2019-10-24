@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.110 - 2019-10-23
+
+- Adding indicator for modal isDirty.
+
 ## 1.2.109 - 2019-10-18
 
 - Minor CSS to add margin-top to forms in modal.

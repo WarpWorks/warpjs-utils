@@ -11,7 +11,8 @@ const Component = (props) => {
     const classNames = classnames({
         'warpjs-action-icon': true,
         'warpjs-clickable': Boolean(props.onClick || props.onConfirm),
-        [`text-${props.style}`]: Boolean(props.style)
+        [`text-${props.style}`]: Boolean(props.style),
+        [props.size]: Boolean(props.size)
     });
 
     let C = <Glyphicon className={classNames} glyph={props.glyph} />;
@@ -35,6 +36,9 @@ Component.propTypes = {
     confirm: PropTypes.func,
     glyph: PropTypes.string.isRequired,
     onClick: PropTypes.func,
+    size: PropTypes.oneOf([
+        'small'
+    ]),
     style: PropTypes.oneOf([
         'muted',
         'primary',
