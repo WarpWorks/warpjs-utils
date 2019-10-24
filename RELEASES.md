@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.111 - 2019-10-24
+
+- Adding wrapper for Container with react hooks.
+
 ## 1.2.110 - 2019-10-23
 
 - Adding indicator for modal isDirty.

@@ -3,6 +3,7 @@ module.exports = (grunt) => {
         'clean',
         'copy',
         'less',
+        'babel',
         'webpack'
     ]);
 };

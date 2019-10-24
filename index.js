@@ -20,6 +20,7 @@ const getHandlebarsViewsDir = require('./lib/get-handlebars-views-dir');
 const getInitialData = require('./lib/get-initial-data');
 const output = require('./lib/output');
 const proxy = require('./lib/proxy');
+const reactUtils = require('./lib/react-utils');
 const requirePartial = require('./lib/require-partial');
 const sendError = require('./lib/send-error');
 const sendErrorHal = require('./lib/send-error-hal');
@@ -66,6 +67,7 @@ module.exports = {
     getInitialData: ($) => getInitialData($),
     output,
     proxy,
+    reactUtils,
     requirePartial: (partialName) => requirePartial(partialName),
     sendError: (req, res, RoutesInfo, err) => sendError(req, res, RoutesInfo, err),
     sendErrorHal: (req, res, resource, err, RoutesInfo, status) => sendErrorHal(req, res, resource, err, RoutesInfo, status),

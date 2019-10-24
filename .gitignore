@@ -1,5 +1,6 @@
 /.nyc_output
 /assets
+/lib/react-utils
 /node_modules
 /reports
 /*.tgz

@@ -22,6 +22,7 @@ module.exports = {
             'grunt/**/*.js',
             'lib/**/*.js',
             '!lib/**/*.test.js',
+            '!lib/react-utils/**/*.js',
             'server/**/*.js',
             '!server/**/*.test.js'
         ]
