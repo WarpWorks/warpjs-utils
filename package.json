@@ -11,6 +11,7 @@
     "prepack": "npm run coverage",
     "precoverage": "grunt check build",
     "coverage": "nyc npm test",
+    "coverage-report": "nyc report --reporter=text --reporter=text-summary",
     "test": "mocha \"lib/**/*.unit.test.js\" \"handlebars/**/*.unit.test.js\" index.unit.test.js"
   },
   "repository": {

@@ -23,3 +23,5 @@ jobs:
         npm run coverage
       env:
         CI: true
+    - name: Coverage report
+      run: npm run coverage-report
