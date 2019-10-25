@@ -9,7 +9,7 @@
   },
   "scripts": {
     "pretest": "grunt check",
-    "prepack": "npm run coverage && grunt",
+    "prepack": "grunt && npm run coverage",
     "coverage": "nyc npm run -s test",
     "test": "mocha \"lib/**/*.unit.test.js\" \"handlebars/**/*.unit.test.js\" index.unit.test.js"
   },
