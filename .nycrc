@@ -1,6 +1,7 @@
 {
   "all": true,
   "report-dir": "./reports/coverage",
+  "temp-dir": "./reports/nyc_output",
   "check-coverage": false,
   "exclude": [
     "**/*.*.test.js",
