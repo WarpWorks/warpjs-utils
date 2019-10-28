@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.112 - 2019-10-28
+
+- Bumping jquery@3.4.1 and bootstrap@3.4.1 because of vulnerability.
+
 ## 1.2.111 - 2019-10-24
 
 - Adding wrapper for Container with react hooks.

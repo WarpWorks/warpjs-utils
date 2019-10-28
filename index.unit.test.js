@@ -67,6 +67,7 @@ describe("index", () => {
             [ 'docLevel', 'object' ],
             [ 'output', 'object' ],
             [ 'proxy', 'object' ],
+            [ 'reactUtils', 'object' ],
             [ 'server', 'object' ],
             [ 'toast', 'object' ]
         ].forEach((info) => it(`should expose ${info[1]} '${info[0]}'`, () => {
