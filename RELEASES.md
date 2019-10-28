@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.113 - 2019-10-28
+
+- Bumping handlebars@4.4.5 because of vulnerability.
+
 ## 1.2.112 - 2019-10-28
 
 - Bumping jquery@3.4.1 and bootstrap@3.4.1 because of vulnerability.
