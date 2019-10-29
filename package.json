@@ -1,11 +1,11 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "1.2.113",
+  "version": "1.2.114",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "engineStrict": true,
   "engines": {
-    "node": ">= 8.12.0"
+    "node": ">=8.12.0"
   },
   "scripts": {
     "prepack": "npm run coverage",
@@ -32,7 +32,14 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-utils#readme",
   "peerDependencies": {
-    "@warp-works/warpjs-plugins": ">=1.2.5"
+    "@warp-works/warpjs-plugins": ">=1.2.5",
+    "react": ">=16.11.0",
+    "react-bootstrap": ">=0.32.4",
+    "react-dom": ">=16.11.0",
+    "react-redux": ">=7.1.1",
+    "redux": ">=4.0.4",
+    "redux-concatenate-reducers": ">=1.0.0",
+    "redux-logger": ">=3.0.6"
   },
   "devDependencies": {
     "@quoin/eslint-config-quoin": "~0.3.2",

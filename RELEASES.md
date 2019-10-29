@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.114 - 2019-10-29
+
+- Converted to use wrapHookContainer.
+
 ## 1.2.113 - 2019-10-28
 
 - Bumping handlebars@4.4.5 because of vulnerability.

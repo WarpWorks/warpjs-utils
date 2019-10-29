@@ -1,27 +1,26 @@
 import cloneDeep from 'lodash/cloneDeep';
+import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
 
-import * as actionCreators from './action-creators';
+import { updateValue } from './action-creators';
 import Component from './component.jsx';
 import selector from './../selector';
-import wrapContainer from './../wrap-container';
+import wrapHookContainer from './../wrap-hook-container';
 
-const mapStateToProps = (state, ownProps) => {
-    const cloned = cloneDeep(state);
-    const subState = selector(cloned, Component, ownProps.id);
+const getComponentProps = (props) => {
+    const dispatch = useDispatch();
+    const cloned = useSelector((state) => cloneDeep(state));
+    const subState = selector(cloned, Component, props.id);
 
     return Object.freeze({
-        filterValue: subState.filterValue
+        filterValue: subState.filterValue,
+        updateValue: (event) => dispatch(updateValue(props.id, event.target.value)),
+        ...props
     });
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => Object.freeze({
-    updateValue: (event) => dispatch(actionCreators.updateValue(ownProps.id, event.target.value))
-});
+const propTypes = {
+    id: PropTypes.string.isRequired
+};
 
-const mergeProps = (stateProps, dispatchProps, ownProps) => Object.freeze({
-    ...stateProps,
-    ...dispatchProps,
-    ...ownProps
-});
-
-export default wrapContainer(Component, mapStateToProps, mapDispatchToProps, mergeProps);
+export default wrapHookContainer(Component, getComponentProps, propTypes);
