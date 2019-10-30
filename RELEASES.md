@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.116 - 2019-10-30
+
+- Making react and Cie be dependencies instead of devDependencies.
+
 ## 1.2.115 - 2019-10-30
 
 - Adding used react-bootstrap and react-redux on window.WarpJS.ReactUtils.
