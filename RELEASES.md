@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.115 - 2019-10-30
+
+- Adding used react-bootstrap and react-redux on window.WarpJS.ReactUtils.
+
 ## 1.2.114 - 2019-10-29
 
 - Converted to use wrapHookContainer.
