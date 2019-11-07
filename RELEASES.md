@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.117 - 2019-11-07
+
+- Adding getNamespaceSubstate() and setNamespaceAttribute().
+
 ## 1.2.116 - 2019-10-30
 
 - Making react and Cie be dependencies instead of devDependencies.

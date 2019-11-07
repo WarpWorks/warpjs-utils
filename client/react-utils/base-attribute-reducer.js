@@ -1,8 +1,6 @@
-import getNamespaceSubstate from './get-namespace-substate';
-import setNamespaceSubstate from './set-namespace-substate';
+import setNamespaceAttribute from './set-namespace-attribute';
 
 export default (state = {}, namespace, key, value) => {
-    const substate = getNamespaceSubstate(state, namespace);
-    substate[key] = value;
-    return setNamespaceSubstate(state, namespace, substate);
+    console.error(`*** DEPRECATED baseAttributeReducer(). Use setNamespaceAttribute() instead ***`);
+    return setNamespaceAttribute(state, namespace, key, value);
 };
