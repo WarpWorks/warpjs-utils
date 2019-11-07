@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const BUTTON = PropTypes.shape({
+    className: PropTypes.string,
     disabled: PropTypes.bool,
     label: PropTypes.string,
     glyph: PropTypes.string,
