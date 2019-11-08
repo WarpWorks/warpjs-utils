@@ -1,4 +1,5 @@
 import classnames from 'classnames';
+import { Fragment } from 'react';
 import { Button, Glyphicon, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import errorBoundary from './../error-boundary';
@@ -9,16 +10,19 @@ const Component = (props) => {
 
     const classes = classnames(
         ...ownClassnames,
+        'warpjs-button',
         {
-            'warpjs-button': true,
+            'no-outline': !props.outline,
             'warpjs-button-with-glyph': Boolean(props.glyph),
-            'warpjs-button-with-label': Boolean(props.label)
+            'warpjs-button-with-label': Boolean(props.label),
+            [`btn-inverse-${props.style}`]: props.inverse
         }
     );
 
     const glyph = props.glyph ? <Glyphicon glyph={props.glyph} className="warpjs-button-glyph" /> : null;
 
-    const button = <Button bsStyle={props.style} bsSize={props.size} onClick={props.onClick} className={classes} disabled={props.disabled}>{glyph}{props.label || null}</Button>;
+    const buttonChildren = props.children || <Fragment>{glyph}{props.label || null}</Fragment>;
+    const button = <Button bsStyle={props.style} bsSize={props.size} onClick={props.onClick} className={classes} disabled={props.disabled}>{buttonChildren}</Button>;
 
     return (props.title)
         ? <OverlayTrigger placement="top" overlay={<Tooltip>{props.title}</Tooltip>}>{button}</OverlayTrigger>
@@ -32,6 +36,8 @@ Component.propTypes = BUTTON_SHAPE;
 
 Component.defaultProps = {
     disabled: false,
+    inverse: false,
+    outline: true,
     style: 'primary'
 };
 

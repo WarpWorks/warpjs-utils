@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.119 - 2019-11-07
+
+- Adding `inverse` and `outline` to [`<Button>`](client/react-utils/components/shapes.js).
+
 ## 1.2.118 - 2019-11-07
 
 - Allow to pass `className` to [`<Button>`](client/react-utils/components/button.jsx).
