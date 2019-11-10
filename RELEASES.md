@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.120 - 2019-11-09
+
+- Adding canonical link.
+
 ## 1.2.119 - 2019-11-07
 
 - Adding `inverse` and `outline` to [`<Button>`](client/react-utils/components/shapes.js).

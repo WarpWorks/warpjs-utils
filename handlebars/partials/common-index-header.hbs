@@ -14,6 +14,10 @@
 <link rel="shortcut icon" href="/public/favicon.ico" />
 <link rel="icon" href="/public/favicon.ico" />
 
+{{#if meta.canonicalUrl}}
+<link rel="canonical" href="{{meta.canonicalUrl}}" />
+{{/if}}
+
 <link rel="stylesheet" href="{{coreUrl}}/css/bootstrap.min.css" />
 <link rel="stylesheet" href="{{coreUrl}}/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="{{coreUrl}}/css/font-awesome.min.css" />
