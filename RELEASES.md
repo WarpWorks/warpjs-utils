@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.122 - 2019-11-14
+
+- WarpWorks/warpjs#359: Matching color of the corner banner.
+
 ## 1.2.121 - 2019-11-14
 
 - WarpWorks/warpjs#359: Defining btn-primary.
