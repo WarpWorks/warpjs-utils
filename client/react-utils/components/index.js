@@ -7,5 +7,6 @@ export { default as FilterableList } from './filterable-list';
 export { default as FilteredList } from './filtered-list';
 export { default as ModalContainer } from './modal-container';
 export { hide as hideModalContainer, show as showModalContainer } from './modal-container';
+export { default as RoundedCheckbox } from './rounded-checkbox';
 export { default as Spinner } from './spinner';
 export { default as Tooltip } from './tooltip';

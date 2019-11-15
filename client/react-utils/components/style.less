@@ -20,6 +20,32 @@
     }
 }
 
+.warpjs-rounded-checkbox {
+    position: relative;
+    padding-left: 24px;
+
+    .warpjs-rounded-checkbox-image {
+        background-image: url(images/checkbox-off.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 0px;
+    }
+
+    &.warpjs-rounded-checkbox-click span {
+        cursor: pointer;
+    }
+
+    &.warpjs-rounded-checkbox-checked {
+        .warpjs-rounded-checkbox-image {
+            background-image: url(images/checkbox-on.svg);
+        }
+    }
+}
+
 @import './auto-save-field/style.less';
 @import './spinner/style';
 @import './modal-container/style';

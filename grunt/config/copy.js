@@ -64,5 +64,17 @@ module.exports = {
                 { packageName: 'redux', filePath: 'dist/redux.min.js' }
             ])
         ]
+    },
+
+    'images': {
+        files: [{
+            expand: true,
+            flatten: false,
+            dest: cssFolder,
+            cwd: 'client',
+            src: [
+                'images/**/*'
+            ]
+        }]
     }
 };
