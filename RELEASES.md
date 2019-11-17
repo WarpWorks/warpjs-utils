@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.124 - 2019-11-17
+
+- Adding new checkbox-off and checkbox-on SVG to fix size difference.
+
 ## 1.2.123 - 2019-11-14
 
 - Adding `RoundedCheckbox` component.
