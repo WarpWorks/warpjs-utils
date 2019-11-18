@@ -44,6 +44,11 @@
             background-image: url(images/checkbox-on.svg);
         }
     }
+
+    &:after {
+        display: none;
+        content: url(images/checkbox-on.svg) url(images/checkbox-off.svg);
+    }
 }
 
 @import './auto-save-field/style.less';
