@@ -1,5 +1,10 @@
 # WarpJS-utils Releases
 
+## 1.2.125 - 2019-11-18
+
+- WarpWorks/warpjs#364: Preload checkbox-off and checkbox-on.
+- Changed to new SVG and set bg-size to exact container size.
+
 ## 1.2.124 - 2019-11-17
 
 - Adding new checkbox-off and checkbox-on SVG to fix size difference.
