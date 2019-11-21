@@ -16,11 +16,46 @@ export { default as setNamespaceAttribute } from './set-namespace-attribute';
 export { default as setNamespaceSubstate } from './set-namespace-substate';
 
 export {
-    /* classnames */ classnames,
-    /* prop-types */ PropTypes,
-    /* react */ Fragment, useEffect,
-    /* react-bootstrap */ Alert, Button, Checkbox, Col, ControlLabel, Form, FormControl, FormGroup, Glyphicon, Grid, HelpBlock, InputGroup, ListGroup, ListGroupItem, OverlayTrigger, Panel, Row, Tab, Table, Tabs, Tooltip,
-    /* react-redux */ batch, useDispatch, useSelector
+    /* classnames */
+    classnames,
+
+    /* prop-types */
+    PropTypes,
+
+    /* react */
+    Fragment,
+    useEffect,
+
+    /* react-bootstrap */
+    Alert,
+    Button,
+    Checkbox,
+    Col,
+    ControlLabel,
+    DropdownButton,
+    Form,
+    FormControl,
+    FormGroup,
+    Glyphicon,
+    Grid,
+    HelpBlock,
+    InputGroup,
+    ListGroup,
+    ListGroupItem,
+    MenuItem,
+    OverlayTrigger,
+    Panel,
+    Row,
+    SplitButton,
+    Tab,
+    Table,
+    Tabs,
+    Tooltip,
+
+    /* react-redux */
+    batch,
+    useDispatch,
+    useSelector
 } from './third-parties';
 
 export { default as wrapContainer } from './wrap-container';

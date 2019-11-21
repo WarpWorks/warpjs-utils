@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.126 - 2019-11-21
+
+- Adding DropdownButton, SplitButton, and MenuItem from react-bootstrap.
+
 ## 1.2.125 - 2019-11-18
 
 - WarpWorks/warpjs#364: Preload checkbox-off and checkbox-on.
