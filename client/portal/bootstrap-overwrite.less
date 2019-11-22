@@ -1,3 +1,17 @@
+// https://www.cssfontstack.com/oldsites/hexcolortool/
+// https://www.color-hex.com/color/4395b8
+
+@primary-color: #4395b8;
+@primary-color-active: #3c86a5;
+@success-color: #4cae4c;
+@success-color-active: #449c44;
+@info-color: #46b8da;
+@info-color-active: #3fa5c4;
+@warning-color: #eea236;
+@warning-color-active: #d69130;
+@danger-color: #ce270d;
+@danger-color-active: #b9230b;
+
 .btn {
     /* border-radius: 4px !important; */
     height: 34px;
@@ -18,14 +32,30 @@
     }
 
     &.btn-primary {
-        background-color: #4395b8;
-        border-color: #4395b8;
-        color: #ffffff;
+        background-color: @primary-color;
+        border-color: @primary-color;
+        color: white;
+
+        &:active {
+            background-color: @primary-color-active;
+            border-color: @primary-color-active;
+        }
 
         &.btn-inverse-primary {
             background-color: #ffffff;
             border-color: #ffffff;
-            color: #4395b8;
+            color: @primary-color;
+        }
+    }
+
+    &.btn-success {
+        background-color: @success-color;
+        border-color: @success-color;
+
+        &.btn-inverse-success {
+            background-color: white;
+            border-color: white;
+            color: @success-color;
         }
     }
 }
@@ -76,4 +106,21 @@ table {
 
 textarea.form-control {
     resize: none;
+}
+
+.text-primary {
+    color: @primary-color;
+}
+.text-danger {
+    color: @danger-color;
+}
+
+.open > .dropdown-toggle.btn-primary {
+    background-color: @primary-color;
+    border-color: @primary-color;
+
+    &:hover, &:focus {
+        background-color: @primary-color-active;
+        border-color: @primary-color-active;
+    }
 }

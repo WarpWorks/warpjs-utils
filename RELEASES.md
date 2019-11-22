@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.129 - 2019-11-22
+
+- Adding more primary Bootstrap overwrite.
+
 ## 1.2.127 - 2019-11-21
 
 - Passing down `<ActionIcon className>`.
