@@ -8,12 +8,15 @@ import Confirm from './confirm';
 import Tooltip from './tooltip';
 
 const Component = (props) => {
-    const classNames = classnames({
-        'warpjs-action-icon': true,
-        'warpjs-clickable': Boolean(props.onClick || props.onConfirm),
-        [`text-${props.style}`]: Boolean(props.style),
-        [props.size]: Boolean(props.size)
-    });
+    const classNames = classnames(
+        {
+            'warpjs-action-icon': true,
+            'warpjs-clickable': Boolean(props.onClick || props.onConfirm),
+            [`text-${props.style}`]: Boolean(props.style),
+            [props.size]: Boolean(props.size)
+        },
+        ...props.className.split(' ')
+    );
 
     let C = <Glyphicon className={classNames} glyph={props.glyph} />;
 
@@ -33,6 +36,7 @@ const Component = (props) => {
 };
 
 Component.propTypes = {
+    className: PropTypes.string,
     confirm: PropTypes.func,
     glyph: PropTypes.string.isRequired,
     onClick: PropTypes.func,
@@ -48,6 +52,10 @@ Component.propTypes = {
         'danger'
     ]),
     title: PropTypes.string
+};
+
+Component.defaultProps = {
+    className: ''
 };
 
 export default errorBoundary(Component);

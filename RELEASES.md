@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 1.2.127 - 2019-11-21
+
+- Passing down `<ActionIcon className>`.
+
 ## 1.2.126 - 2019-11-21
 
 - Adding DropdownButton, SplitButton, and MenuItem from react-bootstrap.
