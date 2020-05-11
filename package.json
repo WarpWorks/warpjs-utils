@@ -72,7 +72,7 @@
     "load-grunt-config": "~3.0.1",
     "mocha": "~6.2.2",
     "nyc": "~14.1.1",
-    "tinymce": "4.7.3",
+    "tinymce": "4.9.10",
     "webpack": "~2.7.0",
     "webpack-visualizer-plugin": "~0.1.11"
   },
