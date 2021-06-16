@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": "@quoin/eslint-config-quoin",
+  "ignorePatterns": ["lib/react-utils"],
+  "overrides": [{
+    "files": ["*.test.js?(x)"],
+    "env": {
+      "mocha": true
+    },
+
+    "globals": {
+      "expect": "readonly"
+    }
+  }]
+}
