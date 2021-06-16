@@ -1,4 +1,6 @@
 /.babelrc
+/.eslintrc.json
+/.github
 /.npmignore
 /.nyc_output
 /.nycrc
