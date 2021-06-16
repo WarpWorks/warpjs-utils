@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0-rc.2",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "publishConfig": {
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-utils#readme",
   "peerDependencies": {
-    "@warp-works/warpjs-plugins": ">=1.2.5"
+    "@warp-works/warpjs-plugins": ">=2.0.0-rc.1"
   },
   "devDependencies": {
     "@quoin/eslint-config-quoin": "^1.0.0-rc.2",
