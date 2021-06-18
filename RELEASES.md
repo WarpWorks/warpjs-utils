@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 2.0.0 - 2021-06-18
+
+- Updated packages and node@14.
+
 ## 1.2.129 - 2019-11-22
 
 - Adding more primary Bootstrap overwrite.

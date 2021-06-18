@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-utils",
-  "version": "2.0.0-rc.2",
+  "version": "2.0.0",
   "description": "Utility functions for WarpJS and plugins",
   "main": "index.js",
   "publishConfig": {
@@ -37,12 +37,12 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-utils#readme",
   "peerDependencies": {
-    "@warp-works/warpjs-plugins": ">=2.0.0-rc.1"
+    "@warp-works/warpjs-plugins": ">=2.0.0"
   },
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "^1.0.0-rc.2",
-    "@quoin/node-test-helpers": "^2.0.0-rc.1",
-    "@warp-works/warpjs-plugins": "^2.0.0-rc.1",
+    "@quoin/eslint-config-quoin": "^2.0.0",
+    "@quoin/node-test-helpers": "^2.0.0",
+    "@warp-works/warpjs-plugins": "^2.0.0",
     "babel-core": "~6.26.3",
     "babel-loader": "~7.1.5",
     "babel-plugin-transform-async-to-generator": "~6.24.1",
@@ -82,8 +82,8 @@
     "webpack-visualizer-plugin": "~0.1.11"
   },
   "dependencies": {
-    "@quoin/node-rc": "^1.0.0-rc.1",
-    "@warp-works/warpjs-filter-box": "^2.0.0-rc.1",
+    "@quoin/node-rc": "^2.0.0",
+    "@warp-works/warpjs-filter-box": "^2.0.0",
     "bluebird": "^3.7.2",
     "classnames": "^2.3.1",
     "debug": "^4.3.1",
