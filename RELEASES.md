@@ -1,5 +1,9 @@
 # WarpJS-utils Releases
 
+## 2.0.1 - 2021-06-21
+
+- Back to tinymce@4 due to breaking changes.
+
 ## 2.0.0 - 2021-06-18
 
 - Updated packages and node@14.
