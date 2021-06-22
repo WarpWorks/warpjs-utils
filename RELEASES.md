@@ -1,5 +1,17 @@
 # WarpJS-utils Releases
 
+## 2.0.2 - 2021-06-21
+
+- Merging into master branch and latest tag.
+
+## 2.0.1 - 2021-06-21
+
+- Back to tinymce@4 due to breaking changes.
+
+## 2.0.0 - 2021-06-18
+
+- Updated packages and node@14.
+
 ## 1.2.129 - 2019-11-22
 
 - Adding more primary Bootstrap overwrite.
