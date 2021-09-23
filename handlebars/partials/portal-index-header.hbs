@@ -1,13 +1,15 @@
 <div class="row">
   <div class="logo-container">
-    {{#if _links.warpjsLogo.href}}
-        {{#if _links.warpjsHomepage.href}}
-          <a href="{{_links.warpjsHomepage.href}}"><img class="logo"
-            src="{{_links.warpjsLogo.href}}"
-            alt="{{_links.warpjsLogo.title}}" /></a>
-        {{else}}
-          <img class="logo" src="{{_links.warpjsLogo.href}}" alt="{{_links.warpjsLogo.title}}" />
-        {{/if}}
+    {{#if _links.warpjsLogo}}
+      {{#if _links.warpjsLogo.href}}
+          {{#if _links.warpjsHomepage.href}}
+            <a href="{{_links.warpjsHomepage.href}}"><img class="logo"
+              src="{{_links.warpjsLogo.href}}"
+              alt="{{_links.warpjsLogo.title}}" /></a>
+          {{else}}
+            <img class="logo" src="{{_links.warpjsLogo.href}}" alt="{{_links.warpjsLogo.title}}" />
+          {{/if}}
+      {{/if}}
     {{/if}}
   </div>
 
